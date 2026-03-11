@@ -249,15 +249,17 @@
                 <!-- Cards -->
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 
-
                     <!-- Card 1 -->
-                    <div class="group p-8 rounded-2xl bg-white dark:bg-slate-900
+                    <div class="group relative overflow-hidden p-8 rounded-2xl bg-white
                         border border-[#2863D8]/20 hover:border-[#2863D8]
-                        shadow-md hover:shadow-[0_20px_40px_rgba(40,99,216,0.25)]
-                        transition-all duration-300 hover:-translate-y-2">
+                        hover:bg-gradient-to-br hover:from-blue-50 hover:to-indigo-50
+                        shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
 
-                        <div class="flex items-center justify-center w-16 h-16 rounded-xl
-                            bg-gradient-to-br from-blue-500 to-blue-700 text-white shadow-lg mb-6">
+                        <div class="absolute top-0 left-0 w-0 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 group-hover:w-full transition-all duration-500"></div>
+
+                        <div class="relative flex items-center justify-center w-16 h-16 rounded-full
+                            bg-gradient-to-br from-blue-500 to-blue-700 text-white shadow-lg mb-6
+                            group-hover:rotate-6 group-hover:scale-110 transition duration-300">
 
                             <span class="material-symbols-outlined text-3xl">
                             workspace_premium
@@ -265,10 +267,10 @@
 
                         </div>
 
-                        <h3 class="text-lg font-bold mb-3">Academic Excellence</h3>
+                        <h3 class="text-lg font-bold mb-2">Academic Excellence</h3>
 
-                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
-                            Ranked in the top 1% of universities worldwide and a member of the prestigious Group of Eight.
+                        <p class="text-sm text-slate-600">
+                            Ranked in the <span class="font-semibold text-blue-600">Top 1%</span> of universities worldwide.
                         </p>
 
                     </div>
@@ -276,74 +278,153 @@
 
 
                     <!-- Card 2 -->
-                    <div class="group p-8 rounded-2xl bg-white dark:bg-slate-900
+                    <div class="group relative overflow-hidden p-8 rounded-2xl bg-white dark:bg-slate-900
                         border border-[#2863D8]/20 hover:border-[#2863D8]
+                        hover:bg-gradient-to-br hover:from-emerald-50 hover:to-green-50
+                        dark:hover:from-slate-800 dark:hover:to-slate-900
                         shadow-md hover:shadow-[0_20px_40px_rgba(40,99,216,0.25)]
                         transition-all duration-300 hover:-translate-y-2">
 
-                        <div class="flex items-center justify-center w-16 h-16 rounded-xl bg-gradient-to-br from-emerald-500 to-green-700 text-white shadow-lg mb-6">
+                                            <!-- Animated Top Bar -->
+                                            <div class="absolute top-0 left-0 w-0 h-1
+                            bg-gradient-to-r from-emerald-500 to-green-600
+                            group-hover:w-full transition-all duration-500">
+                                            </div>
+
+                                            <!-- Icon -->
+                                            <div class="relative flex items-center justify-center
+                            w-16 h-16 rounded-full
+                            bg-gradient-to-br from-emerald-500 to-green-700
+                            text-white shadow-lg mb-6
+                            group-hover:scale-110 group-hover:rotate-6
+                            transition duration-300">
 
                             <span class="material-symbols-outlined text-3xl">
-                            trending_up
+                                trending_up
                             </span>
 
-                        </div>
+                                                <!-- Glow Effect -->
+                                                <div class="absolute inset-0 rounded-full blur-xl opacity-0
+                                bg-emerald-500 group-hover:opacity-40 transition">
+                                                </div>
 
-                        <h3 class="text-lg font-bold mb-3">Career Ready</h3>
+                                            </div>
 
-                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
-                            Strong industry links and integrated internships ensuring you are prepared for the global job market.
-                        </p>
+                                            <!-- Title -->
+                                            <h3 class="text-lg font-bold mb-2">
+                                                Career Ready
+                                            </h3>
 
-                    </div>
+                                            <!-- Description -->
+                                            <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+                                                Strong industry links and integrated internships ensuring
+                                                <span class="font-semibold text-emerald-600">
+                                90% graduate employment success
+                            </span>
+                                                in the global job market.
+                                            </p>
+
+                                        </div>
 
 
 
                     <!-- Card 3 -->
-                    <div class="group p-8 rounded-2xl bg-white dark:bg-slate-900
+                    <div class="group relative overflow-hidden p-8 rounded-2xl bg-white dark:bg-slate-900
                         border border-[#2863D8]/20 hover:border-[#2863D8]
+                        hover:bg-gradient-to-br hover:from-purple-50 hover:to-indigo-50
+                        dark:hover:from-slate-800 dark:hover:to-slate-900
                         shadow-md hover:shadow-[0_20px_40px_rgba(40,99,216,0.25)]
                         transition-all duration-300 hover:-translate-y-2">
 
-                        <div class="flex items-center justify-center w-16 h-16 rounded-xl bg-gradient-to-br from-purple-500 to-indigo-700 text-white shadow-lg mb-6">
+                                            <!-- Animated Top Bar -->
+                                            <div class="absolute top-0 left-0 w-0 h-1
+                            bg-gradient-to-r from-purple-500 to-indigo-600
+                            group-hover:w-full transition-all duration-500">
+                                            </div>
+
+                                            <!-- Icon -->
+                                            <div class="relative flex items-center justify-center
+                            w-16 h-16 rounded-full
+                            bg-gradient-to-br from-purple-500 to-indigo-700
+                            text-white shadow-lg mb-6
+                            group-hover:scale-110 group-hover:rotate-6
+                            transition duration-300">
 
                             <span class="material-symbols-outlined text-3xl">
-                            language
+                                language
                             </span>
 
-                        </div>
+                                                <!-- Glow Effect -->
+                                                <div class="absolute inset-0 rounded-full blur-xl opacity-0
+                                bg-purple-500 group-hover:opacity-40 transition">
+                                                </div>
 
-                        <h3 class="text-lg font-bold mb-3">Global Reputation</h3>
+                                            </div>
 
-                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
-                            Recognized globally for research and teaching quality across all major disciplines.
-                        </p>
+                                            <!-- Title -->
+                                            <h3 class="text-lg font-bold mb-2">
+                                                Global Reputation
+                                            </h3>
 
-                    </div>
+                                            <!-- Description -->
+                                            <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+                                                Recognized globally for research and teaching quality across
+                                                <span class="font-semibold text-purple-600">
+                                all major disciplines
+                            </span>.
+                                            </p>
+
+                                        </div>
 
 
 
                     <!-- Card 4 -->
-                    <div class="group p-8 rounded-2xl bg-white dark:bg-slate-900
+                    <div class="group relative overflow-hidden p-8 rounded-2xl bg-white dark:bg-slate-900
                         border border-[#2863D8]/20 hover:border-[#2863D8]
+                        hover:bg-gradient-to-br hover:from-orange-50 hover:to-red-50
+                        dark:hover:from-slate-800 dark:hover:to-slate-900
                         shadow-md hover:shadow-[0_20px_40px_rgba(40,99,216,0.25)]
                         transition-all duration-300 hover:-translate-y-2">
 
-                        <div class="flex items-center justify-center w-16 h-16 rounded-xl bg-gradient-to-br from-orange-400 to-red-500 text-white shadow-lg mb-6">
+                                            <!-- Animated Top Bar -->
+                                            <div class="absolute top-0 left-0 w-0 h-1
+                            bg-gradient-to-r from-orange-400 to-red-500
+                            group-hover:w-full transition-all duration-500">
+                                            </div>
+
+                                            <!-- Icon -->
+                                            <div class="relative flex items-center justify-center
+                            w-16 h-16 rounded-full
+                            bg-gradient-to-br from-orange-400 to-red-500
+                            text-white shadow-lg mb-6
+                            group-hover:scale-110 group-hover:rotate-6
+                            transition duration-300">
 
                             <span class="material-symbols-outlined text-3xl">
-                            diversity_3
+                                diversity_3
                             </span>
 
-                        </div>
+                                                <!-- Glow Effect -->
+                                                <div class="absolute inset-0 rounded-full blur-xl opacity-0
+                                bg-orange-400 group-hover:opacity-40 transition">
+                                                </div>
 
-                        <h3 class="text-lg font-bold mb-3">Student Life</h3>
+                                            </div>
 
-                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
-                            A vibrant campus culture located in the heart of a safe, affordable, and beautiful city.
-                        </p>
+                                            <!-- Title -->
+                                            <h3 class="text-lg font-bold mb-2">
+                                                Student Life
+                                            </h3>
 
-                    </div>
+                                            <!-- Description -->
+                                            <p class="text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+                                                A vibrant campus culture located in the heart of a
+                                                <span class="font-semibold text-orange-500">
+                                safe, affordable, and beautiful city
+                            </span>.
+                                            </p>
+
+                                        </div>
 
 
                 </div>
