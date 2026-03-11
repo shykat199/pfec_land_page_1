@@ -14,6 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -74,24 +75,25 @@
                 <div class="flex items-center justify-between h-24">
                     <div class="flex items-center gap-3">
                         <div class="text-primary">
-                            <img alt="Adelaide University Logo" class="h-12 w-auto object-contain"
-                                src="./adelaide-university-logo-b (1).jpg" />
+                            <img alt="Adelaide University Logo" class="h-12 w-auto object-contain" src="./adelaide-university-logo-b (1).jpg" />
                         </div>
-                        <div class="flex flex-col">
-                            <h2 class="text-slate-900 dark:text-white font-black leading-tight text-xl" style="color: #150C5D;">Adelaide University</h2>
-                            <p class="text-primary font-bold tracking-widest uppercase text-[11px]">In Partnership with
-                                PFEC Global</p>
+
+                        <div class="text-primary">
+                            <img alt="Adelaide University Logo" class="h-24 w-auto object-contain" src="./group-of-eight-go8-australia-logo-png_seeklogo-347065.png" />
                         </div>
+
                     </div>
                     <nav class="hidden md:flex items-center gap-8">
                         <a class="text-slate-700 dark:text-slate-200 text-sm font-semibold hover:text-primary transition-colors"
-                            href="#programs">Programs</a>
+                           href="#why-adelaide">Why Adelaide</a>
                         <a class="text-slate-700 dark:text-slate-200 text-sm font-semibold hover:text-primary transition-colors"
-                            href="#why-adelaide">Why Adelaide</a>
+                            href="#programs">Programs</a>
                         <a class="text-slate-700 dark:text-slate-200 text-sm font-semibold hover:text-primary transition-colors"
                             href="#scholarships">Scholarships</a>
                         <a class="text-slate-700 dark:text-slate-200 text-sm font-semibold hover:text-primary transition-colors"
-                            href="#compare">Comparison</a>
+                           href="#faq">Faq</a>
+                        <a class="text-slate-700 dark:text-slate-200 text-sm font-semibold hover:text-primary transition-colors"
+                           href="#pfec-experience">About Us</a>
                         <button
                             class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all shadow-lg shadow-primary/25">
                             Book Free Consultation
@@ -143,16 +145,6 @@
                             <span class="text-white text-2xl font-black">Top 150</span>
                             <span class="text-slate-400 text-[10px] uppercase font-bold">THE World Ranking</span>
                         </div>
-                    </div>
-                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
-                        <button
-                            class="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-xl text-lg font-bold transition-all transform hover:-translate-y-1 shadow-xl shadow-primary/30">
-                            Apply Now via PFEC Global
-                        </button>
-                        <button
-                            class="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 px-8 py-4 rounded-xl text-lg font-bold transition-all">
-                            View Prospectus
-                        </button>
                     </div>
                 </div>
                 <!-- Fast Lead Form Overlay -->
@@ -238,116 +230,131 @@
             </div>
         </section>
         <!-- PFEC Global Trust Section -->
+
         <!-- Why Choose Adelaide University? -->
-        <section class="py-24 bg-white dark:bg-slate-900" id="why-adelaide">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
-                <div class="text-center max-w-3xl mx-auto mb-16">
-                    <h2 class="text-4xl font-black text-slate-900 dark:text-white mb-4" style="color: #150C5D;">Why Choose Adelaide University?
+        <section class="py-8 bg-white dark:bg-slate-900" id="why-adelaide">
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <!-- Heading -->
+                <div class="text-center max-w-3xl mx-auto mb-12">
+
+                    <h2 class="text-4xl font-extrabold mb-4" style="color:#150C5D;">
+                        Why Choose Adelaide University?
                     </h2>
-                    <p class="text-slate-600 dark:text-slate-400 text-lg">Experience world-class education designed for
-                        your global future in one of the world's most liveable cities.</p>
+
                 </div>
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div
-                        class="group p-8 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-primary/50 hover:shadow-xl transition-all bg-background-light dark:bg-background-dark/50">
-                        <div
-                            class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
-                            <span class="material-symbols-outlined text-3xl">workspace_premium</span>
+
+
+                <!-- Cards -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+
+                    <!-- Card 1 -->
+                    <div class="group p-8 rounded-2xl bg-white dark:bg-slate-900
+                        border border-[#2863D8]/20 hover:border-[#2863D8]
+                        shadow-md hover:shadow-[0_20px_40px_rgba(40,99,216,0.25)]
+                        transition-all duration-300 hover:-translate-y-2">
+
+                        <div class="flex items-center justify-center w-16 h-16 rounded-xl
+                            bg-gradient-to-br from-blue-500 to-blue-700 text-white shadow-lg mb-6">
+
+                            <span class="material-symbols-outlined text-3xl">
+                            workspace_premium
+                            </span>
+
                         </div>
-                        <h3 class="text-xl font-bold mb-3">Academic Excellence</h3>
-                        <p class="text-slate-600 dark:text-slate-400 leading-relaxed">Ranked in the top 1% of
-                            universities worldwide and a member of the prestigious Group of Eight.</p>
-                    </div>
-                    <div
-                        class="group p-8 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-primary/50 hover:shadow-xl transition-all bg-background-light dark:bg-background-dark/50">
-                        <div
-                            class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
-                            <span class="material-symbols-outlined text-3xl">trending_up</span>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">Career Ready</h3>
-                        <p class="text-slate-600 dark:text-slate-400 leading-relaxed">Strong industry links and
-                            integrated internships ensuring you are prepared for the global job market.</p>
-                    </div>
-                    <div
-                        class="group p-8 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-primary/50 hover:shadow-xl transition-all bg-background-light dark:bg-background-dark/50">
-                        <div
-                            class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
-                            <span class="material-symbols-outlined text-3xl">language</span>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">Global Reputation</h3>
-                        <p class="text-slate-600 dark:text-slate-400 leading-relaxed">Recognized globally for research
-                            and teaching quality across all major disciplines.</p>
-                    </div>
-                    <div
-                        class="group p-8 rounded-2xl border border-slate-200 dark:border-slate-800 hover:border-primary/50 hover:shadow-xl transition-all bg-background-light dark:bg-background-dark/50">
-                        <div
-                            class="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
-                            <span class="material-symbols-outlined text-3xl">diversity_3</span>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">Student Life</h3>
-                        <p class="text-slate-600 dark:text-slate-400 leading-relaxed">A vibrant campus culture located
-                            in the heart of a safe, affordable, and beautiful city.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="py-24 bg-background-light dark:bg-background-dark/50" id="recognition">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
-                <div class="text-center max-w-3xl mx-auto mb-16">
-                    <h2 class="text-4xl font-black text-slate-900 dark:text-white mb-4" style="color: #150C5D;">A World Class Education You Can
-                        Trust</h2>
-                    <p class="text-slate-600 dark:text-slate-400 text-lg">
-                        Adelaide University is consistently ranked among the world's best, providing students and
-                        parents with the reassurance of a high-quality global institution.
-                    </p>
-                </div>
-                <div class="grid md:grid-cols-3 gap-8 mb-12">
-                    <div
-                        class="bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-200 dark:border-slate-800 text-center shadow-sm">
-                        <div
-                            class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center text-primary mx-auto mb-6">
-                            <span class="material-symbols-outlined text-4xl">workspace_premium</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-slate-900 dark:text-white">Top 100</h3>
-                        <p class="text-slate-500 font-semibold uppercase tracking-wider text-sm">QS World University
-                            Rankings</p>
-                    </div>
-                    <div
-                        class="bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-200 dark:border-slate-800 text-center shadow-sm">
-                        <div
-                            class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center text-primary mx-auto mb-6">
-                            <span class="material-symbols-outlined text-4xl">military_tech</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-slate-900 dark:text-white">Top 150</h3>
-                        <p class="text-slate-500 font-semibold uppercase tracking-wider text-sm">Times Higher Education
-                            Rankings</p>
-                    </div>
-                    <div
-                        class="bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-200 dark:border-slate-800 text-center shadow-sm">
-                        <div
-                            class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center text-primary mx-auto mb-6">
-                            <span class="material-symbols-outlined text-4xl">groups</span>
-                        </div>
-                        <h3 class="text-xl font-bold text-slate-900 dark:text-white">Member of the</h3>
-                        <p class="text-slate-500 font-semibold uppercase tracking-wider text-sm">Group of Eight (Go8)
+
+                        <h3 class="text-lg font-bold mb-3">Academic Excellence</h3>
+
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                            Ranked in the top 1% of universities worldwide and a member of the prestigious Group of Eight.
                         </p>
+
                     </div>
-                </div>
-                <div
-                    class="bg-primary/5 border border-primary/20 rounded-2xl p-6 flex flex-col md:flex-row items-center justify-center gap-4 text-center">
-                    <span class="material-symbols-outlined text-primary">star_outline</span>
-                    <p class="text-slate-900 dark:text-white font-bold text-lg">
-                        Strong subject rankings in <span class="text-primary">Engineering</span>, <span
-                            class="text-primary">Business</span>, and <span class="text-primary">Computer
-                            Science</span>.
-                    </p>
+
+
+
+                    <!-- Card 2 -->
+                    <div class="group p-8 rounded-2xl bg-white dark:bg-slate-900
+                        border border-[#2863D8]/20 hover:border-[#2863D8]
+                        shadow-md hover:shadow-[0_20px_40px_rgba(40,99,216,0.25)]
+                        transition-all duration-300 hover:-translate-y-2">
+
+                        <div class="flex items-center justify-center w-16 h-16 rounded-xl bg-gradient-to-br from-emerald-500 to-green-700 text-white shadow-lg mb-6">
+
+                            <span class="material-symbols-outlined text-3xl">
+                            trending_up
+                            </span>
+
+                        </div>
+
+                        <h3 class="text-lg font-bold mb-3">Career Ready</h3>
+
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                            Strong industry links and integrated internships ensuring you are prepared for the global job market.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- Card 3 -->
+                    <div class="group p-8 rounded-2xl bg-white dark:bg-slate-900
+                        border border-[#2863D8]/20 hover:border-[#2863D8]
+                        shadow-md hover:shadow-[0_20px_40px_rgba(40,99,216,0.25)]
+                        transition-all duration-300 hover:-translate-y-2">
+
+                        <div class="flex items-center justify-center w-16 h-16 rounded-xl bg-gradient-to-br from-purple-500 to-indigo-700 text-white shadow-lg mb-6">
+
+                            <span class="material-symbols-outlined text-3xl">
+                            language
+                            </span>
+
+                        </div>
+
+                        <h3 class="text-lg font-bold mb-3">Global Reputation</h3>
+
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                            Recognized globally for research and teaching quality across all major disciplines.
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- Card 4 -->
+                    <div class="group p-8 rounded-2xl bg-white dark:bg-slate-900
+                        border border-[#2863D8]/20 hover:border-[#2863D8]
+                        shadow-md hover:shadow-[0_20px_40px_rgba(40,99,216,0.25)]
+                        transition-all duration-300 hover:-translate-y-2">
+
+                        <div class="flex items-center justify-center w-16 h-16 rounded-xl bg-gradient-to-br from-orange-400 to-red-500 text-white shadow-lg mb-6">
+
+                            <span class="material-symbols-outlined text-3xl">
+                            diversity_3
+                            </span>
+
+                        </div>
+
+                        <h3 class="text-lg font-bold mb-3">Student Life</h3>
+
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                            A vibrant campus culture located in the heart of a safe, affordable, and beautiful city.
+                        </p>
+
+                    </div>
+
+
                 </div>
             </div>
+
         </section>
+
         <!-- Program Categories -->
-        <section class="py-24 bg-background-light dark:bg-background-dark" id="programs">
+        <section class="py-8 bg-background-light dark:bg-background-dark" id="programs">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
-                <div class="flex flex-col md:flex-row items-end justify-between gap-6 mb-16">
+                <div class="flex flex-col md:flex-row items-end justify-between gap-6 mb-8">
                     <div class="max-w-2xl">
                         <h2 class="text-4xl font-black text-slate-900 dark:text-white mb-4" style="color: #150C5D;">Explore Our World Class Programs</h2>
                         <p class="text-slate-600 dark:text-slate-400">Discover hundreds of undergraduate and postgraduate degrees tailored for future leaders.</p>
@@ -356,528 +363,735 @@
                 </div>
                 <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Business -->
-                    <div
-                        class="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all group border border-slate-200 dark:border-slate-800">
-                        <div class="p-6">
-                            <div class="mb-6">
-                                <p class="text-[10px] font-black uppercase tracking-widest text-primary mb-3">Popular
-                                    Courses</p>
-                                <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
-                                    <div class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
-                                        <div class="course-accordion group/item">
-                                            <button
-                                                class="flex items-center justify-between w-full py-2 text-left hover:text-primary transition-colors font-medium border-b border-slate-100 dark:border-slate-800"
-                                                onclick="toggleCourse(this)">
-                                                <span class="flex items-center gap-2"><span
-                                                        class="material-symbols-outlined text-xs text-primary">fiber_manual_record</span>
-                                                    B.Sc. in Computer Science</span>
-                                                <span
-                                                    class="material-symbols-outlined text-sm transition-transform group-[.active]/item:rotate-180">expand_more</span>
-                                            </button>
-                                            <div
-                                                class="course-details hidden p-3 bg-slate-50 dark:bg-slate-800/50 rounded-b-lg space-y-2 text-[13px]">
-                                                <p><span class="font-bold">Level:</span> Bachelors</p>
-                                                <p><span class="font-bold">Fee:</span> From CAD 13,000/year</p>
-                                                <p><span class="font-bold">Next Intake:</span> Sept, Jan, May</p>
-                                                <p><span class="font-bold">Duration:</span> 4 years</p>
-                                                <p><span class="font-bold text-primary italic">Scholarship: CAD
-                                                        5,000–32,000</span></p>
-                                            </div>
-                                        </div>
-                                        <div class="course-accordion group/item">
-                                            <button
-                                                class="flex items-center justify-between w-full py-2 text-left hover:text-primary transition-colors font-medium border-b border-slate-100 dark:border-slate-800"
-                                                onclick="toggleCourse(this)">
-                                                <span class="flex items-center gap-2"><span
-                                                        class="material-symbols-outlined text-xs text-primary">fiber_manual_record</span>
-                                                    B.S. in Information Technology</span>
-                                                <span
-                                                    class="material-symbols-outlined text-sm transition-transform group-[.active]/item:rotate-180">expand_more</span>
-                                            </button>
-                                            <div
-                                                class="course-details hidden p-3 bg-slate-50 dark:bg-slate-800/50 rounded-b-lg space-y-2 text-[13px]">
-                                                <p><span class="font-bold">Level:</span> Bachelors</p>
-                                                <p><span class="font-bold">Fee:</span> From CAD 13,000/year</p>
-                                                <p><span class="font-bold">Next Intake:</span> Sept, Jan, May</p>
-                                                <p><span class="font-bold">Duration:</span> 4 years</p>
-                                                <p><span class="font-bold text-primary italic">Scholarship: CAD
-                                                        5,000–32,000</span></p>
-                                            </div>
-                                        </div>
-                                        <div class="course-accordion group/item">
-                                            <button
-                                                class="flex items-center justify-between w-full py-2 text-left hover:text-primary transition-colors font-medium border-b border-slate-100 dark:border-slate-800"
-                                                onclick="toggleCourse(this)">
-                                                <span class="flex items-center gap-2"><span
-                                                        class="material-symbols-outlined text-xs text-primary">fiber_manual_record</span>
-                                                    M.Sc. in Computer Science</span>
-                                                <span
-                                                    class="material-symbols-outlined text-sm transition-transform group-[.active]/item:rotate-180">expand_more</span>
-                                            </button>
-                                            <div
-                                                class="course-details hidden p-3 bg-slate-50 dark:bg-slate-800/50 rounded-b-lg space-y-2 text-[13px]">
-                                                <p><span class="font-bold">Level:</span> Masters</p>
-                                                <p><span class="font-bold">Fee:</span> From CAD 13,000/year</p>
-                                                <p><span class="font-bold">Next Intake:</span> Sept, Jan, May</p>
-                                                <p><span class="font-bold">Duration:</span> 2 years</p>
-                                                <p><span class="font-bold text-primary italic">Scholarship: CAD
-                                                        5,000–32,000</span></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </ul>
-                            </div>
-                            <h3 class="text-xl font-bold mb-2">Business &amp; Management</h3>
-                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-6">Master global leadership,
-                                finance, and innovation with AACSB accredited programs.</p>
+                    <div class="group bg-white dark:bg-slate-900 rounded-2xl p-6
+border border-slate-200 dark:border-slate-800
+shadow-sm transition-all duration-300
+hover:-translate-y-2 hover:shadow-xl hover:border-[#2863D8]">
+
+                        <!-- ICON -->
+                        <div class="w-12 h-12 flex items-center justify-center rounded-lg
+bg-[#2863D8]/10 text-[#2863D8] mb-5">
+
+<span class="material-symbols-outlined text-2xl">
+business_center
+</span>
+
                         </div>
+
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">
+                            Business & Management
+                        </h3>
+
+                        <p class="text-sm text-slate-600 dark:text-slate-400 mb-6">
+                            Develop leadership, entrepreneurship, finance and global business strategy skills.
+                        </p>
+
+                        <p class="text-[11px] font-bold uppercase tracking-widest text-[#2863D8] mb-4">
+                            Popular Courses
+                        </p>
+
+                        <div class="space-y-2">
+
+                            <!-- COURSE 1 -->
+                            <div class="course-accordion">
+
+                                <button onclick="toggleCourse(this)"
+                                        class="flex items-center justify-between w-full py-2 px-3 rounded-lg
+hover:bg-slate-50 dark:hover:bg-slate-800 transition">
+
+<span class="flex items-center gap-2 text-sm font-medium">
+<span class="material-symbols-outlined text-xs text-[#2863D8]">
+fiber_manual_record
+</span>
+Bachelor of Business Administration
+</span>
+
+                                    <span class="material-symbols-outlined text-sm transition-transform duration-300 group-[.active]:rotate-180">
+expand_more
+</span>
+
+                                </button>
+
+                                <div class="course-details hidden p-4 bg-slate-50 dark:bg-slate-800/60 rounded-lg space-y-2 text-sm">
+
+                                    <p><span class="font-semibold">Level:</span> Bachelors</p>
+                                    <p><span class="font-semibold">Duration:</span> 3–4 Years</p>
+                                    <p><span class="font-semibold">Tuition Fee:</span> CAD 14,000 – 18,000/year</p>
+                                    <p><span class="font-semibold">Intake:</span> January / May / September</p>
+                                    <p><span class="font-semibold">Career Paths:</span> Marketing, Finance, HR, Management</p>
+
+                                    <p class="text-[#2863D8] font-semibold italic">
+                                        Scholarships available up to CAD 20,000
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- COURSE 2 -->
+                            <div class="course-accordion">
+
+                                <button onclick="toggleCourse(this)"
+                                        class="flex items-center justify-between w-full py-2 px-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition">
+
+                                    <span class="flex items-center gap-2 text-sm font-medium">
+                                    <span class="material-symbols-outlined text-xs text-[#2863D8]">
+                                    fiber_manual_record
+                                    </span>
+                                    Master of Business Administration (MBA)
+                                    </span>
+
+                                    <span class="material-symbols-outlined text-sm transition-transform duration-300 group-[.active]:rotate-180">
+                                        expand_more
+                                        </span>
+
+                                </button>
+
+                                <div class="course-details hidden p-4 bg-slate-50 dark:bg-slate-800/60 rounded-lg space-y-2 text-sm">
+
+                                    <p><span class="font-semibold">Level:</span> Masters</p>
+                                    <p><span class="font-semibold">Duration:</span> 1–2 Years</p>
+                                    <p><span class="font-semibold">Tuition Fee:</span> CAD 18,000 – 25,000/year</p>
+                                    <p><span class="font-semibold">Specializations:</span> Finance, Marketing, Entrepreneurship</p>
+                                    <p><span class="font-semibold">Internship:</span> Available</p>
+
+                                    <p class="text-[#2863D8] font-semibold italic">
+                                        Scholarships up to CAD 15,000
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
                     </div>
                     <!-- IT -->
-                    <div
-                        class="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all group border border-slate-200 dark:border-slate-800">
-                        <div class="p-6">
-                            <div class="mb-6">
-                                <p class="text-[10px] font-black uppercase tracking-widest text-primary mb-3">Popular
-                                    Courses</p>
-                                <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
-                                    <div class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
-                                        <div class="course-accordion group/item">
-                                            <button
-                                                class="flex items-center justify-between w-full py-2 text-left hover:text-primary transition-colors font-medium border-b border-slate-100 dark:border-slate-800"
-                                                onclick="toggleCourse(this)">
-                                                <span class="flex items-center gap-2"><span
-                                                        class="material-symbols-outlined text-xs text-primary">fiber_manual_record</span>
-                                                    B.Sc. in Computer Science</span>
-                                                <span
-                                                    class="material-symbols-outlined text-sm transition-transform group-[.active]/item:rotate-180">expand_more</span>
-                                            </button>
-                                            <div
-                                                class="course-details hidden p-3 bg-slate-50 dark:bg-slate-800/50 rounded-b-lg space-y-2 text-[13px]">
-                                                <p><span class="font-bold">Level:</span> Bachelors</p>
-                                                <p><span class="font-bold">Fee:</span> From CAD 13,000/year</p>
-                                                <p><span class="font-bold">Next Intake:</span> Sept, Jan, May</p>
-                                                <p><span class="font-bold">Duration:</span> 4 years</p>
-                                                <p><span class="font-bold text-primary italic">Scholarship: CAD
-                                                        5,000–32,000</span></p>
-                                            </div>
-                                        </div>
-                                        <div class="course-accordion group/item">
-                                            <button
-                                                class="flex items-center justify-between w-full py-2 text-left hover:text-primary transition-colors font-medium border-b border-slate-100 dark:border-slate-800"
-                                                onclick="toggleCourse(this)">
-                                                <span class="flex items-center gap-2"><span
-                                                        class="material-symbols-outlined text-xs text-primary">fiber_manual_record</span>
-                                                    B.S. in Information Technology</span>
-                                                <span
-                                                    class="material-symbols-outlined text-sm transition-transform group-[.active]/item:rotate-180">expand_more</span>
-                                            </button>
-                                            <div
-                                                class="course-details hidden p-3 bg-slate-50 dark:bg-slate-800/50 rounded-b-lg space-y-2 text-[13px]">
-                                                <p><span class="font-bold">Level:</span> Bachelors</p>
-                                                <p><span class="font-bold">Fee:</span> From CAD 13,000/year</p>
-                                                <p><span class="font-bold">Next Intake:</span> Sept, Jan, May</p>
-                                                <p><span class="font-bold">Duration:</span> 4 years</p>
-                                                <p><span class="font-bold text-primary italic">Scholarship: CAD
-                                                        5,000–32,000</span></p>
-                                            </div>
-                                        </div>
-                                        <div class="course-accordion group/item">
-                                            <button
-                                                class="flex items-center justify-between w-full py-2 text-left hover:text-primary transition-colors font-medium border-b border-slate-100 dark:border-slate-800"
-                                                onclick="toggleCourse(this)">
-                                                <span class="flex items-center gap-2"><span
-                                                        class="material-symbols-outlined text-xs text-primary">fiber_manual_record</span>
-                                                    M.Sc. in Computer Science</span>
-                                                <span
-                                                    class="material-symbols-outlined text-sm transition-transform group-[.active]/item:rotate-180">expand_more</span>
-                                            </button>
-                                            <div
-                                                class="course-details hidden p-3 bg-slate-50 dark:bg-slate-800/50 rounded-b-lg space-y-2 text-[13px]">
-                                                <p><span class="font-bold">Level:</span> Masters</p>
-                                                <p><span class="font-bold">Fee:</span> From CAD 13,000/year</p>
-                                                <p><span class="font-bold">Next Intake:</span> Sept, Jan, May</p>
-                                                <p><span class="font-bold">Duration:</span> 2 years</p>
-                                                <p><span class="font-bold text-primary italic">Scholarship: CAD
-                                                        5,000–32,000</span></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </ul>
-                            </div>
-                            <h3 class="text-xl font-bold mb-2">Information Technology</h3>
-                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-6">Lead the AI revolution with
-                                specialized degrees in Cybersecurity, Data Science, and Dev Ops.</p>
+                    <div class="group bg-white dark:bg-slate-900 rounded-2xl p-6
+border border-slate-200 dark:border-slate-800
+shadow-sm transition-all duration-300
+hover:-translate-y-2 hover:shadow-xl hover:border-[#2863D8]">
+
+                        <div class="w-12 h-12 flex items-center justify-center rounded-lg
+bg-[#2863D8]/10 text-[#2863D8] mb-5">
+
+<span class="material-symbols-outlined text-2xl">
+computer
+</span>
+
                         </div>
+
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">
+                            Information Technology
+                        </h3>
+
+                        <p class="text-sm text-slate-600 dark:text-slate-400 mb-6">
+                            Prepare for careers in AI, cybersecurity, software development and data science.
+                        </p>
+
+                        <p class="text-[11px] font-bold uppercase tracking-widest text-[#2863D8] mb-4">
+                            Popular Courses
+                        </p>
+
+                        <div class="space-y-2">
+
+                            <div class="course-accordion">
+
+                                <button onclick="toggleCourse(this)"
+                                        class="flex items-center justify-between w-full py-2 px-3 rounded-lg
+hover:bg-slate-50 dark:hover:bg-slate-800 transition">
+
+<span class="flex items-center gap-2 text-sm font-medium">
+<span class="material-symbols-outlined text-xs text-[#2863D8]">
+fiber_manual_record
+</span>
+B.Sc Computer Science
+</span>
+
+                                    <span class="material-symbols-outlined text-sm transition-transform duration-300 group-[.active]:rotate-180">
+expand_more
+</span>
+
+                                </button>
+
+                                <div class="course-details hidden p-4 bg-slate-50 dark:bg-slate-800/60 rounded-lg space-y-2 text-sm">
+
+                                    <p><span class="font-semibold">Level:</span> Bachelors</p>
+                                    <p><span class="font-semibold">Duration:</span> 4 Years</p>
+                                    <p><span class="font-semibold">Tuition Fee:</span> CAD 15,000/year</p>
+                                    <p><span class="font-semibold">Specialization:</span> AI, Data Science, Software Engineering</p>
+                                    <p><span class="font-semibold">Internship:</span> Included</p>
+
+                                    <p class="text-[#2863D8] font-semibold italic">
+                                        Scholarships available up to CAD 25,000
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="course-accordion">
+
+                                <button onclick="toggleCourse(this)"
+                                        class="flex items-center justify-between w-full py-2 px-3 rounded-lg
+hover:bg-slate-50 dark:hover:bg-slate-800 transition">
+
+<span class="flex items-center gap-2 text-sm font-medium">
+<span class="material-symbols-outlined text-xs text-[#2863D8]">
+fiber_manual_record
+</span>
+Master of Data Science
+</span>
+
+                                    <span class="material-symbols-outlined text-sm transition-transform duration-300 group-[.active]:rotate-180">
+expand_more
+</span>
+
+                                </button>
+
+                                <div class="course-details hidden p-4 bg-slate-50 dark:bg-slate-800/60 rounded-lg space-y-2 text-sm">
+
+                                    <p><span class="font-semibold">Level:</span> Masters</p>
+                                    <p><span class="font-semibold">Duration:</span> 2 Years</p>
+                                    <p><span class="font-semibold">Tuition Fee:</span> CAD 20,000/year</p>
+                                    <p><span class="font-semibold">Focus:</span> AI, Machine Learning, Big Data</p>
+
+                                    <p class="text-[#2863D8] font-semibold italic">
+                                        Scholarships up to CAD 20,000
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
                     </div>
                     <!-- Engineering -->
-                    <div
-                        class="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all group border border-slate-200 dark:border-slate-800">
-                        <div class="p-6">
-                            <div class="mb-6">
-                                <p class="text-[10px] font-black uppercase tracking-widest text-primary mb-3">Popular
-                                    Courses</p>
-                                <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
-                                    <div class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
-                                        <div class="course-accordion group/item">
-                                            <button
-                                                class="flex items-center justify-between w-full py-2 text-left hover:text-primary transition-colors font-medium border-b border-slate-100 dark:border-slate-800"
-                                                onclick="toggleCourse(this)">
-                                                <span class="flex items-center gap-2"><span
-                                                        class="material-symbols-outlined text-xs text-primary">fiber_manual_record</span>
-                                                    B.Sc. in Computer Science</span>
-                                                <span
-                                                    class="material-symbols-outlined text-sm transition-transform group-[.active]/item:rotate-180">expand_more</span>
-                                            </button>
-                                            <div
-                                                class="course-details hidden p-3 bg-slate-50 dark:bg-slate-800/50 rounded-b-lg space-y-2 text-[13px]">
-                                                <p><span class="font-bold">Level:</span> Bachelors</p>
-                                                <p><span class="font-bold">Fee:</span> From CAD 13,000/year</p>
-                                                <p><span class="font-bold">Next Intake:</span> Sept, Jan, May</p>
-                                                <p><span class="font-bold">Duration:</span> 4 years</p>
-                                                <p><span class="font-bold text-primary italic">Scholarship: CAD
-                                                        5,000–32,000</span></p>
-                                            </div>
-                                        </div>
-                                        <div class="course-accordion group/item">
-                                            <button
-                                                class="flex items-center justify-between w-full py-2 text-left hover:text-primary transition-colors font-medium border-b border-slate-100 dark:border-slate-800"
-                                                onclick="toggleCourse(this)">
-                                                <span class="flex items-center gap-2"><span
-                                                        class="material-symbols-outlined text-xs text-primary">fiber_manual_record</span>
-                                                    B.S. in Information Technology</span>
-                                                <span
-                                                    class="material-symbols-outlined text-sm transition-transform group-[.active]/item:rotate-180">expand_more</span>
-                                            </button>
-                                            <div
-                                                class="course-details hidden p-3 bg-slate-50 dark:bg-slate-800/50 rounded-b-lg space-y-2 text-[13px]">
-                                                <p><span class="font-bold">Level:</span> Bachelors</p>
-                                                <p><span class="font-bold">Fee:</span> From CAD 13,000/year</p>
-                                                <p><span class="font-bold">Next Intake:</span> Sept, Jan, May</p>
-                                                <p><span class="font-bold">Duration:</span> 4 years</p>
-                                                <p><span class="font-bold text-primary italic">Scholarship: CAD
-                                                        5,000–32,000</span></p>
-                                            </div>
-                                        </div>
-                                        <div class="course-accordion group/item">
-                                            <button
-                                                class="flex items-center justify-between w-full py-2 text-left hover:text-primary transition-colors font-medium border-b border-slate-100 dark:border-slate-800"
-                                                onclick="toggleCourse(this)">
-                                                <span class="flex items-center gap-2"><span
-                                                        class="material-symbols-outlined text-xs text-primary">fiber_manual_record</span>
-                                                    M.Sc. in Computer Science</span>
-                                                <span
-                                                    class="material-symbols-outlined text-sm transition-transform group-[.active]/item:rotate-180">expand_more</span>
-                                            </button>
-                                            <div
-                                                class="course-details hidden p-3 bg-slate-50 dark:bg-slate-800/50 rounded-b-lg space-y-2 text-[13px]">
-                                                <p><span class="font-bold">Level:</span> Masters</p>
-                                                <p><span class="font-bold">Fee:</span> From CAD 13,000/year</p>
-                                                <p><span class="font-bold">Next Intake:</span> Sept, Jan, May</p>
-                                                <p><span class="font-bold">Duration:</span> 2 years</p>
-                                                <p><span class="font-bold text-primary italic">Scholarship: CAD
-                                                        5,000–32,000</span></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </ul>
-                            </div>
-                            <h3 class="text-xl font-bold mb-2">Engineering</h3>
-                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-6">Build the future with world-class
-                                facilities and high-impact research projects.</p>
+                    <div class="group bg-white dark:bg-slate-900 rounded-2xl p-6
+border border-slate-200 dark:border-slate-800
+shadow-sm transition-all duration-300
+hover:-translate-y-2 hover:shadow-xl hover:border-[#2863D8]">
+
+                        <!-- Icon -->
+                        <div class="w-12 h-12 flex items-center justify-center rounded-lg
+bg-[#2863D8]/10 text-[#2863D8] mb-5">
+                            <span class="material-symbols-outlined text-2xl">engineering</span>
                         </div>
+
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">
+                            Engineering
+                        </h3>
+
+                        <p class="text-sm text-slate-600 dark:text-slate-400 mb-6">
+                            Design the future with advanced programs in civil, mechanical and electrical engineering.
+                        </p>
+
+                        <p class="text-[11px] font-bold uppercase tracking-widest text-[#2863D8] mb-4">
+                            Popular Courses
+                        </p>
+
+                        <div class="space-y-2">
+
+                            <!-- Course 1 -->
+                            <div class="course-accordion">
+
+                                <button onclick="toggleCourse(this)"
+                                        class="flex items-center justify-between w-full py-2 px-3 rounded-lg
+hover:bg-slate-50 dark:hover:bg-slate-800 transition">
+
+<span class="flex items-center gap-2 text-sm font-medium">
+<span class="material-symbols-outlined text-xs text-[#2863D8]">
+fiber_manual_record
+</span>
+B.Eng Civil Engineering
+</span>
+
+                                    <span class="material-symbols-outlined text-sm transition-transform duration-300 group-[.active]:rotate-180">
+expand_more
+</span>
+
+                                </button>
+
+                                <div class="course-details hidden p-4 bg-slate-50 dark:bg-slate-800/60 rounded-lg space-y-2 text-sm">
+
+                                    <p><span class="font-semibold">Level:</span> Bachelors</p>
+                                    <p><span class="font-semibold">Duration:</span> 4 Years</p>
+                                    <p><span class="font-semibold">Tuition Fee:</span> CAD 15,000 – 19,000/year</p>
+                                    <p><span class="font-semibold">Intake:</span> January / September</p>
+                                    <p><span class="font-semibold">Career:</span> Structural Engineer, Project Manager</p>
+
+                                    <p class="text-[#2863D8] font-semibold italic">
+                                        Scholarship up to CAD 20,000
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Course 2 -->
+                            <div class="course-accordion">
+
+                                <button onclick="toggleCourse(this)"
+                                        class="flex items-center justify-between w-full py-2 px-3 rounded-lg
+hover:bg-slate-50 dark:hover:bg-slate-800 transition">
+
+<span class="flex items-center gap-2 text-sm font-medium">
+<span class="material-symbols-outlined text-xs text-[#2863D8]">
+fiber_manual_record
+</span>
+B.Eng Mechanical Engineering
+</span>
+
+                                    <span class="material-symbols-outlined text-sm transition-transform duration-300 group-[.active]:rotate-180">
+expand_more
+</span>
+
+                                </button>
+
+                                <div class="course-details hidden p-4 bg-slate-50 dark:bg-slate-800/60 rounded-lg space-y-2 text-sm">
+
+                                    <p><span class="font-semibold">Level:</span> Bachelors</p>
+                                    <p><span class="font-semibold">Duration:</span> 4 Years</p>
+                                    <p><span class="font-semibold">Tuition Fee:</span> CAD 16,000/year</p>
+                                    <p><span class="font-semibold">Focus:</span> Robotics, Manufacturing, Design</p>
+
+                                    <p class="text-[#2863D8] font-semibold italic">
+                                        Scholarship available
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
                     </div>
                     <!-- Health and Medical Sciences -->
-                    <div
-                        class="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all group border border-slate-200 dark:border-slate-800">
-                        <div class="p-6">
-                            <div class="mb-6">
-                                <p class="text-[10px] font-black uppercase tracking-widest text-primary mb-3">Popular
-                                    Courses</p>
-                                <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
-                                    <div class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
-                                        <div class="course-accordion group/item">
-                                            <button
-                                                class="flex items-center justify-between w-full py-2 text-left hover:text-primary transition-colors font-medium border-b border-slate-100 dark:border-slate-800"
-                                                onclick="toggleCourse(this)">
-                                                <span class="flex items-center gap-2"><span
-                                                        class="material-symbols-outlined text-xs text-primary">fiber_manual_record</span>
-                                                    B.Sc. in Computer Science</span>
-                                                <span
-                                                    class="material-symbols-outlined text-sm transition-transform group-[.active]/item:rotate-180">expand_more</span>
-                                            </button>
-                                            <div
-                                                class="course-details hidden p-3 bg-slate-50 dark:bg-slate-800/50 rounded-b-lg space-y-2 text-[13px]">
-                                                <p><span class="font-bold">Level:</span> Bachelors</p>
-                                                <p><span class="font-bold">Fee:</span> From CAD 13,000/year</p>
-                                                <p><span class="font-bold">Next Intake:</span> Sept, Jan, May</p>
-                                                <p><span class="font-bold">Duration:</span> 4 years</p>
-                                                <p><span class="font-bold text-primary italic">Scholarship: CAD
-                                                        5,000–32,000</span></p>
-                                            </div>
-                                        </div>
-                                        <div class="course-accordion group/item">
-                                            <button
-                                                class="flex items-center justify-between w-full py-2 text-left hover:text-primary transition-colors font-medium border-b border-slate-100 dark:border-slate-800"
-                                                onclick="toggleCourse(this)">
-                                                <span class="flex items-center gap-2"><span
-                                                        class="material-symbols-outlined text-xs text-primary">fiber_manual_record</span>
-                                                    B.S. in Information Technology</span>
-                                                <span
-                                                    class="material-symbols-outlined text-sm transition-transform group-[.active]/item:rotate-180">expand_more</span>
-                                            </button>
-                                            <div
-                                                class="course-details hidden p-3 bg-slate-50 dark:bg-slate-800/50 rounded-b-lg space-y-2 text-[13px]">
-                                                <p><span class="font-bold">Level:</span> Bachelors</p>
-                                                <p><span class="font-bold">Fee:</span> From CAD 13,000/year</p>
-                                                <p><span class="font-bold">Next Intake:</span> Sept, Jan, May</p>
-                                                <p><span class="font-bold">Duration:</span> 4 years</p>
-                                                <p><span class="font-bold text-primary italic">Scholarship: CAD
-                                                        5,000–32,000</span></p>
-                                            </div>
-                                        </div>
-                                        <div class="course-accordion group/item">
-                                            <button
-                                                class="flex items-center justify-between w-full py-2 text-left hover:text-primary transition-colors font-medium border-b border-slate-100 dark:border-slate-800"
-                                                onclick="toggleCourse(this)">
-                                                <span class="flex items-center gap-2"><span
-                                                        class="material-symbols-outlined text-xs text-primary">fiber_manual_record</span>
-                                                    M.Sc. in Computer Science</span>
-                                                <span
-                                                    class="material-symbols-outlined text-sm transition-transform group-[.active]/item:rotate-180">expand_more</span>
-                                            </button>
-                                            <div
-                                                class="course-details hidden p-3 bg-slate-50 dark:bg-slate-800/50 rounded-b-lg space-y-2 text-[13px]">
-                                                <p><span class="font-bold">Level:</span> Masters</p>
-                                                <p><span class="font-bold">Fee:</span> From CAD 13,000/year</p>
-                                                <p><span class="font-bold">Next Intake:</span> Sept, Jan, May</p>
-                                                <p><span class="font-bold">Duration:</span> 2 years</p>
-                                                <p><span class="font-bold text-primary italic">Scholarship: CAD
-                                                        5,000–32,000</span></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </ul>
-                            </div>
-                            <h3 class="text-xl font-bold mb-2">Health and Medical Sciences</h3>
-                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-6">Engage in cutting-edge research
-                                and world-class medical training in state-of-the-art facilities.</p>
+                    <div class="group bg-white dark:bg-slate-900 rounded-2xl p-6
+border border-slate-200 dark:border-slate-800
+shadow-sm transition-all duration-300
+hover:-translate-y-2 hover:shadow-xl hover:border-[#2863D8]">
+
+                        <!-- Icon -->
+                        <div class="w-12 h-12 flex items-center justify-center rounded-lg
+bg-[#2863D8]/10 text-[#2863D8] mb-5">
+
+<span class="material-symbols-outlined text-2xl">
+health_and_safety
+</span>
+
                         </div>
+
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">
+                            Health & Medical Sciences
+                        </h3>
+
+                        <p class="text-sm text-slate-600 dark:text-slate-400 mb-6">
+                            Study modern healthcare systems and medical sciences in advanced laboratories.
+                        </p>
+
+                        <p class="text-[11px] font-bold uppercase tracking-widest text-[#2863D8] mb-4">
+                            Popular Courses
+                        </p>
+
+                        <div class="space-y-2">
+
+                            <!-- Course 1 -->
+                            <div class="course-accordion">
+
+                                <button onclick="toggleCourse(this)"
+                                        class="flex items-center justify-between w-full py-2 px-3 rounded-lg
+hover:bg-slate-50 dark:hover:bg-slate-800 transition">
+
+<span class="flex items-center gap-2 text-sm font-medium">
+<span class="material-symbols-outlined text-xs text-[#2863D8]">
+fiber_manual_record
+</span>
+Bachelor of Nursing
+</span>
+
+                                    <span class="material-symbols-outlined text-sm transition-transform duration-300 group-[.active]:rotate-180">
+expand_more
+</span>
+
+                                </button>
+
+                                <div class="course-details hidden p-4 bg-slate-50 dark:bg-slate-800/60 rounded-lg space-y-2 text-sm">
+
+                                    <p><span class="font-semibold">Level:</span> Bachelors</p>
+                                    <p><span class="font-semibold">Duration:</span> 3–4 Years</p>
+                                    <p><span class="font-semibold">Clinical Training:</span> Included</p>
+                                    <p><span class="font-semibold">Tuition Fee:</span> CAD 17,000/year</p>
+
+                                    <p class="text-[#2863D8] font-semibold italic">
+                                        Scholarships available
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Course 2 -->
+                            <div class="course-accordion">
+
+                                <button onclick="toggleCourse(this)"
+                                        class="flex items-center justify-between w-full py-2 px-3 rounded-lg
+hover:bg-slate-50 dark:hover:bg-slate-800 transition">
+
+<span class="flex items-center gap-2 text-sm font-medium">
+<span class="material-symbols-outlined text-xs text-[#2863D8]">
+fiber_manual_record
+</span>
+Master of Public Health
+</span>
+
+                                    <span class="material-symbols-outlined text-sm transition-transform duration-300 group-[.active]:rotate-180">
+expand_more
+</span>
+
+                                </button>
+
+                                <div class="course-details hidden p-4 bg-slate-50 dark:bg-slate-800/60 rounded-lg space-y-2 text-sm">
+
+                                    <p><span class="font-semibold">Level:</span> Masters</p>
+                                    <p><span class="font-semibold">Duration:</span> 2 Years</p>
+                                    <p><span class="font-semibold">Focus:</span> Epidemiology, Health Policy</p>
+                                    <p><span class="font-semibold">Tuition Fee:</span> CAD 18,000/year</p>
+
+                                    <p class="text-[#2863D8] font-semibold italic">
+                                        Scholarship opportunities available
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
                     </div>
                     <!-- Law and Criminology -->
-                    <div
-                        class="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all group border border-slate-200 dark:border-slate-800">
-                        <div class="p-6">
-                            <div class="mb-6">
-                                <p class="text-[10px] font-black uppercase tracking-widest text-primary mb-3">Popular
-                                    Courses</p>
-                                <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
-                                    <div class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
-                                        <div class="course-accordion group/item">
-                                            <button
-                                                class="flex items-center justify-between w-full py-2 text-left hover:text-primary transition-colors font-medium border-b border-slate-100 dark:border-slate-800"
-                                                onclick="toggleCourse(this)">
-                                                <span class="flex items-center gap-2"><span
-                                                        class="material-symbols-outlined text-xs text-primary">fiber_manual_record</span>
-                                                    B.Sc. in Computer Science</span>
-                                                <span
-                                                    class="material-symbols-outlined text-sm transition-transform group-[.active]/item:rotate-180">expand_more</span>
-                                            </button>
-                                            <div
-                                                class="course-details hidden p-3 bg-slate-50 dark:bg-slate-800/50 rounded-b-lg space-y-2 text-[13px]">
-                                                <p><span class="font-bold">Level:</span> Bachelors</p>
-                                                <p><span class="font-bold">Fee:</span> From CAD 13,000/year</p>
-                                                <p><span class="font-bold">Next Intake:</span> Sept, Jan, May</p>
-                                                <p><span class="font-bold">Duration:</span> 4 years</p>
-                                                <p><span class="font-bold text-primary italic">Scholarship: CAD
-                                                        5,000–32,000</span></p>
-                                            </div>
-                                        </div>
-                                        <div class="course-accordion group/item">
-                                            <button
-                                                class="flex items-center justify-between w-full py-2 text-left hover:text-primary transition-colors font-medium border-b border-slate-100 dark:border-slate-800"
-                                                onclick="toggleCourse(this)">
-                                                <span class="flex items-center gap-2"><span
-                                                        class="material-symbols-outlined text-xs text-primary">fiber_manual_record</span>
-                                                    B.S. in Information Technology</span>
-                                                <span
-                                                    class="material-symbols-outlined text-sm transition-transform group-[.active]/item:rotate-180">expand_more</span>
-                                            </button>
-                                            <div
-                                                class="course-details hidden p-3 bg-slate-50 dark:bg-slate-800/50 rounded-b-lg space-y-2 text-[13px]">
-                                                <p><span class="font-bold">Level:</span> Bachelors</p>
-                                                <p><span class="font-bold">Fee:</span> From CAD 13,000/year</p>
-                                                <p><span class="font-bold">Next Intake:</span> Sept, Jan, May</p>
-                                                <p><span class="font-bold">Duration:</span> 4 years</p>
-                                                <p><span class="font-bold text-primary italic">Scholarship: CAD
-                                                        5,000–32,000</span></p>
-                                            </div>
-                                        </div>
-                                        <div class="course-accordion group/item">
-                                            <button
-                                                class="flex items-center justify-between w-full py-2 text-left hover:text-primary transition-colors font-medium border-b border-slate-100 dark:border-slate-800"
-                                                onclick="toggleCourse(this)">
-                                                <span class="flex items-center gap-2"><span
-                                                        class="material-symbols-outlined text-xs text-primary">fiber_manual_record</span>
-                                                    M.Sc. in Computer Science</span>
-                                                <span
-                                                    class="material-symbols-outlined text-sm transition-transform group-[.active]/item:rotate-180">expand_more</span>
-                                            </button>
-                                            <div
-                                                class="course-details hidden p-3 bg-slate-50 dark:bg-slate-800/50 rounded-b-lg space-y-2 text-[13px]">
-                                                <p><span class="font-bold">Level:</span> Masters</p>
-                                                <p><span class="font-bold">Fee:</span> From CAD 13,000/year</p>
-                                                <p><span class="font-bold">Next Intake:</span> Sept, Jan, May</p>
-                                                <p><span class="font-bold">Duration:</span> 2 years</p>
-                                                <p><span class="font-bold text-primary italic">Scholarship: CAD
-                                                        5,000–32,000</span></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </ul>
-                            </div>
-                            <h3 class="text-xl font-bold mb-2">Law and Criminology</h3>
-                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-6">Achieve excellence in legal
-                                education and justice studies through our prestigious law programs.</p>
+                    <div class="group bg-white dark:bg-slate-900 rounded-2xl p-6
+border border-slate-200 dark:border-slate-800
+shadow-sm transition-all duration-300
+hover:-translate-y-2 hover:shadow-xl hover:border-[#2863D8]">
+
+                        <!-- Icon -->
+                        <div class="w-12 h-12 flex items-center justify-center rounded-lg
+bg-[#2863D8]/10 text-[#2863D8] mb-5">
+
+<span class="material-symbols-outlined text-2xl">
+gavel
+</span>
+
                         </div>
+
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">
+                            Law & Criminology
+                        </h3>
+
+                        <p class="text-sm text-slate-600 dark:text-slate-400 mb-6">
+                            Explore justice systems, criminal law, and global legal frameworks.
+                        </p>
+
+                        <p class="text-[11px] font-bold uppercase tracking-widest text-[#2863D8] mb-4">
+                            Popular Courses
+                        </p>
+
+                        <div class="space-y-2">
+
+                            <div class="course-accordion">
+                                <button onclick="toggleCourse(this)"
+                                        class="flex items-center justify-between w-full py-2 px-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition">
+
+<span class="flex items-center gap-2 text-sm font-medium">
+<span class="material-symbols-outlined text-xs text-[#2863D8]">fiber_manual_record</span>
+Bachelor of Laws (LLB)
+</span>
+
+                                    <span class="material-symbols-outlined text-sm transition-transform duration-300 group-[.active]:rotate-180">
+expand_more
+</span>
+
+                                </button>
+
+                                <div class="course-details hidden p-4 bg-slate-50 dark:bg-slate-800/60 rounded-lg space-y-2 text-sm">
+
+                                    <p><span class="font-semibold">Level:</span> Bachelors</p>
+                                    <p><span class="font-semibold">Duration:</span> 3–4 Years</p>
+                                    <p><span class="font-semibold">Tuition Fee:</span> CAD 18,000/year</p>
+                                    <p><span class="font-semibold">Career:</span> Lawyer, Legal Consultant</p>
+
+                                    <p class="text-[#2863D8] font-semibold italic">
+                                        Scholarship available
+                                    </p>
+
+                                </div>
+                            </div>
+
+
+                            <div class="course-accordion">
+                                <button onclick="toggleCourse(this)"
+                                        class="flex items-center justify-between w-full py-2 px-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition">
+
+<span class="flex items-center gap-2 text-sm font-medium">
+<span class="material-symbols-outlined text-xs text-[#2863D8]">fiber_manual_record</span>
+BA Criminology
+</span>
+
+                                    <span class="material-symbols-outlined text-sm transition-transform duration-300 group-[.active]:rotate-180">
+expand_more
+</span>
+
+                                </button>
+
+                                <div class="course-details hidden p-4 bg-slate-50 dark:bg-slate-800/60 rounded-lg space-y-2 text-sm">
+
+                                    <p><span class="font-semibold">Level:</span> Bachelors</p>
+                                    <p><span class="font-semibold">Duration:</span> 3 Years</p>
+                                    <p><span class="font-semibold">Focus:</span> Criminal Justice, Law Enforcement</p>
+                                    <p><span class="font-semibold">Tuition Fee:</span> CAD 16,000/year</p>
+
+                                    <p class="text-[#2863D8] font-semibold italic">
+                                        Scholarship up to CAD 10,000
+                                    </p>
+
+                                </div>
+                            </div>
+
+                        </div>
+
                     </div>
                     <!-- Science and Environmental Studies -->
-                    <div
-                        class="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all group border border-slate-200 dark:border-slate-800">
-                        <div class="p-6">
-                            <div class="mb-6">
-                                <p class="text-[10px] font-black uppercase tracking-widest text-primary mb-3">Popular
-                                    Courses</p>
-                                <ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
-                                    <div class="space-y-2 text-sm text-slate-600 dark:text-slate-400">
-                                        <div class="course-accordion group/item">
-                                            <button
-                                                class="flex items-center justify-between w-full py-2 text-left hover:text-primary transition-colors font-medium border-b border-slate-100 dark:border-slate-800"
-                                                onclick="toggleCourse(this)">
-                                                <span class="flex items-center gap-2"><span
-                                                        class="material-symbols-outlined text-xs text-primary">fiber_manual_record</span>
-                                                    B.Sc. in Computer Science</span>
-                                                <span
-                                                    class="material-symbols-outlined text-sm transition-transform group-[.active]/item:rotate-180">expand_more</span>
-                                            </button>
-                                            <div
-                                                class="course-details hidden p-3 bg-slate-50 dark:bg-slate-800/50 rounded-b-lg space-y-2 text-[13px]">
-                                                <p><span class="font-bold">Level:</span> Bachelors</p>
-                                                <p><span class="font-bold">Fee:</span> From CAD 13,000/year</p>
-                                                <p><span class="font-bold">Next Intake:</span> Sept, Jan, May</p>
-                                                <p><span class="font-bold">Duration:</span> 4 years</p>
-                                                <p><span class="font-bold text-primary italic">Scholarship: CAD
-                                                        5,000–32,000</span></p>
-                                            </div>
-                                        </div>
-                                        <div class="course-accordion group/item">
-                                            <button
-                                                class="flex items-center justify-between w-full py-2 text-left hover:text-primary transition-colors font-medium border-b border-slate-100 dark:border-slate-800"
-                                                onclick="toggleCourse(this)">
-                                                <span class="flex items-center gap-2"><span
-                                                        class="material-symbols-outlined text-xs text-primary">fiber_manual_record</span>
-                                                    B.S. in Information Technology</span>
-                                                <span
-                                                    class="material-symbols-outlined text-sm transition-transform group-[.active]/item:rotate-180">expand_more</span>
-                                            </button>
-                                            <div
-                                                class="course-details hidden p-3 bg-slate-50 dark:bg-slate-800/50 rounded-b-lg space-y-2 text-[13px]">
-                                                <p><span class="font-bold">Level:</span> Bachelors</p>
-                                                <p><span class="font-bold">Fee:</span> From CAD 13,000/year</p>
-                                                <p><span class="font-bold">Next Intake:</span> Sept, Jan, May</p>
-                                                <p><span class="font-bold">Duration:</span> 4 years</p>
-                                                <p><span class="font-bold text-primary italic">Scholarship: CAD
-                                                        5,000–32,000</span></p>
-                                            </div>
-                                        </div>
-                                        <div class="course-accordion group/item">
-                                            <button
-                                                class="flex items-center justify-between w-full py-2 text-left hover:text-primary transition-colors font-medium border-b border-slate-100 dark:border-slate-800"
-                                                onclick="toggleCourse(this)">
-                                                <span class="flex items-center gap-2"><span
-                                                        class="material-symbols-outlined text-xs text-primary">fiber_manual_record</span>
-                                                    M.Sc. in Computer Science</span>
-                                                <span
-                                                    class="material-symbols-outlined text-sm transition-transform group-[.active]/item:rotate-180">expand_more</span>
-                                            </button>
-                                            <div
-                                                class="course-details hidden p-3 bg-slate-50 dark:bg-slate-800/50 rounded-b-lg space-y-2 text-[13px]">
-                                                <p><span class="font-bold">Level:</span> Masters</p>
-                                                <p><span class="font-bold">Fee:</span> From CAD 13,000/year</p>
-                                                <p><span class="font-bold">Next Intake:</span> Sept, Jan, May</p>
-                                                <p><span class="font-bold">Duration:</span> 2 years</p>
-                                                <p><span class="font-bold text-primary italic">Scholarship: CAD
-                                                        5,000–32,000</span></p>
-                                            </div>
+                    <div class="group bg-white dark:bg-slate-900 rounded-2xl p-6
+                        border border-slate-200 dark:border-slate-800
+                        shadow-sm transition-all duration-300
+                        hover:-translate-y-2 hover:shadow-xl hover:border-[#2863D8]">
+
+                        <!-- Icon -->
+                        <div class="w-12 h-12 flex items-center justify-center rounded-lg bg-[#2863D8]/10 text-[#2863D8] mb-5">
+
+                        <span class="material-symbols-outlined text-2xl">
+                        eco
+                        </span>
+
+                        </div>
+
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">
+                            Science & Environmental Studies
+                        </h3>
+
+                        <p class="text-sm text-slate-600 dark:text-slate-400 mb-6">
+                            Study environmental sustainability, climate science and research innovation.
+                        </p>
+
+                        <p class="text-[11px] font-bold uppercase tracking-widest text-[#2863D8] mb-4">
+                            Popular Courses
+                        </p>
+
+                        <div class="space-y-2">
+
+                            <div class="course-accordion">
+                                <button onclick="toggleCourse(this)" class="flex items-center justify-between w-full py-2 px-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition">
+
+                                    <span class="flex items-center gap-2 text-sm font-medium">
+                                        <span class="material-symbols-outlined text-xs text-[#2863D8]">fiber_manual_record</span>
+                                        B.Sc Environmental Science
+                                    </span>
+
+                                    <span class="material-symbols-outlined text-sm transition-transform duration-300 group-[.active]:rotate-180">
+                                    expand_more
+                                    </span>
+
+                                </button>
+
+                                <div class="course-details hidden p-4 bg-slate-50 dark:bg-slate-800/60 rounded-lg space-y-2 text-sm">
+
+                                    <p><span class="font-semibold">Level:</span> Bachelors</p>
+                                    <p><span class="font-semibold">Duration:</span> 3–4 Years</p>
+                                    <p><span class="font-semibold">Focus:</span> Climate Change, Sustainability</p>
+                                    <p><span class="font-semibold">Tuition Fee:</span> CAD 15,000/year</p>
+
+                                    <p class="text-[#2863D8] font-semibold italic">
+                                        Scholarship opportunities available
+                                    </p>
+
+                                </div>
+                            </div>
+
+
+                            <div class="course-accordion">
+                                <button onclick="toggleCourse(this)" class="flex items-center justify-between w-full py-2 px-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition">
+
+                                    <span class="flex items-center gap-2 text-sm font-medium">
+                                    <span class="material-symbols-outlined text-xs text-[#2863D8]">fiber_manual_record</span>
+                                    Master of Environmental Management
+                                    </span>
+
+                                    <span class="material-symbols-outlined text-sm transition-transform duration-300 group-[.active]:rotate-180">
+                                    expand_more
+                                    </span>
+
+                                </button>
+
+                                <div class="course-details hidden p-4 bg-slate-50 dark:bg-slate-800/60 rounded-lg space-y-2 text-sm">
+
+                                    <p><span class="font-semibold">Level:</span> Masters</p>
+                                    <p><span class="font-semibold">Duration:</span> 2 Years</p>
+                                    <p><span class="font-semibold">Focus:</span> Environmental Policy, Sustainability</p>
+                                    <p><span class="font-semibold">Tuition Fee:</span> CAD 17,000/year</p>
+
+                                    <p class="text-[#2863D8] font-semibold italic">
+                                        Scholarship up to CAD 15,000
+                                    </p>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-gradient-to-br from-[#0a1e4d] via-[#1152d4] to-[#0a1e4d] text-white relative overflow-hidden" id="scholarships">
+            <div class="absolute top-0 right-0 -mt-20 -mr-20 opacity-10">
+                <span class="material-symbols-outlined text-[400px]">workspace_premium</span>
+            </div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 reveal">
+                <div class="grid lg:grid-cols-5 gap-16 items-center">
+                    <div class="lg:col-span-3 space-y-10">
+                        <div class="space-y-4">
+                            <span class="bg-white/20 border border-white/30 px-4 py-1.5 rounded-full text-sm font-bold tracking-widest uppercase">Financial
+                                Support</span>
+                            <h2 class="text-5xl font-black leading-tight">Investing in Your <br /><span
+                                    class="text-blue-200 italic">Global Future</span></h2>
+                            <p class="text-blue-100 text-xl leading-relaxed max-w-2xl">
+                                Adelaide University, in partnership with PFEC Global, offers one of Australia's most
+                                generous scholarship programs to empower high-achieving international students.
+                            </p>
+                        </div>
+                        <div class="grid gap-6">
+                            <div
+                                    class="group flex items-start gap-6 bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20 hover:bg-white/20 transition-all">
+                                <div
+                                        class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-primary shrink-0">
+                                    <span class="material-symbols-outlined text-4xl">public</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-black text-2xl mb-2">Global Citizens Scholarship</h4>
+                                    <p class="text-blue-100 leading-relaxed">Get a 15% to 30% reduction on your total
+                                        annual tuition fees for the entire duration of your undergraduate or
+                                        postgraduate program.</p>
+                                </div>
+                            </div>
+                            <div
+                                    class="group flex items-start gap-6 bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20 hover:bg-white/20 transition-all">
+                                <div
+                                        class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-primary shrink-0">
+                                    <span class="material-symbols-outlined text-4xl">biotech</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-black text-2xl mb-2">Higher Degree Research Scholarships</h4>
+                                    <p class="text-blue-100 leading-relaxed">Comprehensive financial support packages
+                                        including tuition fee waivers and living stipends for PhD and Masters by
+                                        Research candidates.</p>
+                                </div>
+                            </div>
+                            <div
+                                    class="group flex items-start gap-6 bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20 hover:bg-white/20 transition-all">
+                                <div
+                                        class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-primary shrink-0">
+                                    <span class="material-symbols-outlined text-4xl">card_membership</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-black text-2xl mb-2">PFEC Global Exclusive Bursaries</h4>
+                                    <p class="text-blue-100 leading-relaxed">Exclusive one-off grants and application
+                                        fee waivers available only for students applying through PFEC Global's official
+                                        channels.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-2 space-y-8">
+                        <!-- TIMER -->
+                        <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-6 text-center shadow-xl">
+
+                            <p class="text-sm uppercase tracking-widest text-blue-200 mb-4 font-bold">
+                                Webinar Starts In
+                            </p>
+
+                            <div class="grid grid-cols-4 gap-4">
+
+                                <div class="bg-white/20 rounded-xl p-4">
+                                    <p id="days" class="text-3xl font-black">00</p>
+                                    <p class="text-xs text-blue-200 uppercase">Days</p>
+                                </div>
+
+                                <div class="bg-white/20 rounded-xl p-4">
+                                    <p id="hours" class="text-3xl font-black">00</p>
+                                    <p class="text-xs text-blue-200 uppercase">Hours</p>
+                                </div>
+
+                                <div class="bg-white/20 rounded-xl p-4">
+                                    <p id="minutes" class="text-3xl font-black">00</p>
+                                    <p class="text-xs text-blue-200 uppercase">Minutes</p>
+                                </div>
+
+                                <div class="bg-white/20 rounded-xl p-4">
+                                    <p id="seconds" class="text-3xl font-black">00</p>
+                                    <p class="text-xs text-blue-200 uppercase">Seconds</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="bg-white text-slate-900 p-10 rounded-[2.5rem] shadow-2xl relative overflow-hidden">
+                            <div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -mr-16 -mt-16"></div>
+                            <div class="relative z-10">
+                                <div
+                                        class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-8">
+                                    <span class="material-symbols-outlined text-4xl">calendar_month</span>
+                                </div>
+                                <h3 class="text-3xl font-black mb-4" style="color: #150C5D;">Scholarship Masterclass</h3>
+                                <p class="text-slate-600 mb-8">Join our upcoming webinar to learn the secrets to a
+                                    successful scholarship application for the 2025 intake.</p>
+                                <div class="space-y-6 mb-10">
+                                    <div class="flex items-center gap-4">
+                                        <span class="material-symbols-outlined text-primary">event</span>
+                                        <div>
+                                            <p class="text-[10px] uppercase font-black text-slate-400">Date</p>
+                                            <p class="font-bold">24th October, 2024</p>
                                         </div>
                                     </div>
-                                </ul>
+                                    <div class="flex items-center gap-4">
+                                        <span class="material-symbols-outlined text-primary">schedule</span>
+                                        <div>
+                                            <p class="text-[10px] uppercase font-black text-slate-400">Time</p>
+                                            <p class="font-bold">2:00 PM (Local Time)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button
+                                        class="w-full bg-primary text-white py-5 rounded-2xl font-black text-lg hover:bg-primary/90 transition-all shadow-lg shadow-primary/30">
+                                    Register for Free
+                                </button>
+                                <p class="text-center text-xs text-slate-400 mt-6 font-medium">Limited slots available
+                                    for international applicants.</p>
                             </div>
-                            <h3 class="text-xl font-bold mb-2">Science and Environmental Studies</h3>
-                            <p class="text-slate-600 dark:text-slate-400 text-sm mb-6">Drive scientific discovery and
-                                environmental research to solve the world's most pressing challenges.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Comparison Table Section -->
-        <section class="py-24 bg-white dark:bg-slate-900" id="compare">
-            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl font-black text-slate-900 dark:text-white mb-4" style="color: #150C5D;">How We Compare</h2>
-                    <p class="text-slate-600 dark:text-slate-400">See why Adelaide University stands out among
-                        Australian institutions.</p>
-                </div>
-                <div class="overflow-x-auto rounded-2xl border border-slate-200 dark:border-slate-800">
-                    <table class="w-full text-left">
-                        <thead>
-                            <tr class="bg-slate-50 dark:bg-slate-800">
-                                <th class="p-6 font-bold text-slate-900 dark:text-white">Feature</th>
-                                <th class="p-6 font-bold text-primary">Adelaide University</th>
-                                <th class="p-6 font-bold text-slate-500">Non-Go8 Universities</th>
-                            </tr>
-                        </thead>
-                        <tbody class="divide-y divide-slate-200 dark:divide-slate-800">
-                            <tr>
-                                <td class="p-6 font-semibold">Global Research Ranking</td>
-                                <td class="p-6"><span class="flex items-center gap-2 text-primary font-bold"><span
-                                            class="material-symbols-outlined">check_circle</span> Top 100 QS</span></td>
-                                <td class="p-6 text-slate-500 italic">Ranking varies (250+)</td>
-                            </tr>
-                            <tr>
-                                <td class="p-6 font-semibold">Prestigious Association</td>
-                                <td class="p-6"><span class="flex items-center gap-2 text-primary font-bold"><span
-                                            class="material-symbols-outlined">check_circle</span> Group of Eight
-                                        (Go8)</span></td>
-                                <td class="p-6 text-slate-500">Not Eligible</td>
-                            </tr>
-                            <tr>
-                                <td class="p-6 font-semibold">Living Costs</td>
-                                <td class="p-6"><span class="flex items-center gap-2 text-primary font-bold"><span
-                                            class="material-symbols-outlined">check_circle</span> 14% Lower than
-                                        Sydney</span></td>
-                                <td class="p-6 text-slate-500">High in major cities</td>
-                            </tr>
-                            <tr>
-                                <td class="p-6 font-semibold">Post-Study Work Rights</td>
-                                <td class="p-6"><span class="flex items-center gap-2 text-primary font-bold"><span
-                                            class="material-symbols-outlined">check_circle</span> Regional
-                                        Benefits</span></td>
-                                <td class="p-6 text-slate-500">Standard Duration</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="mt-8 flex justify-center">
-                    <button
-                        class="flex items-center gap-2 border-2 border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg font-bold transition-all">
-                        <span class="material-symbols-outlined">add_circle</span>
-                        Add Another University to Compare
-                    </button>
-                </div>
-            </div>
-        </section>
-        <section class="py-24 bg-background-light dark:bg-background-dark/30" id="experience-life">
+
+
+        <section class="py-8 bg-white dark:bg-background-dark/30" id="experience-life">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
                 <div class="text-center max-w-3xl mx-auto mb-12">
                     <h2 class="text-4xl font-black text-slate-900 dark:text-white mb-4" style="color: #150C5D;">Experience Life at Adelaide</h2>
@@ -993,205 +1207,193 @@
                 }
             </script>
         </section>
+
         <!-- Scholarship Section -->
-        <section class="py-24 bg-background-light dark:bg-background-dark" id="testimonials">
+        <section class="py-8 bg-background-light dark:bg-background-dark" id="testimonials">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
-                <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="text-center max-w-3xl mx-auto mb-12">
                     <h2 class="text-4xl font-black text-slate-900 dark:text-white mb-4" style="color: #150C5D;">What Our Students Say</h2>
                     <p class="text-slate-600 dark:text-slate-400 text-lg">Hear from international students who have
                         started their global careers with a degree from Adelaide University.</p>
                 </div>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Testimonial 1 -->
-                    <div
-                        class="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 flex flex-col">
-                        <div class="flex items-center gap-1 text-primary mb-6">
-                            <span class="material-symbols-outlined fill-1">star</span>
-                            <span class="material-symbols-outlined fill-1">star</span>
-                            <span class="material-symbols-outlined fill-1">star</span>
-                            <span class="material-symbols-outlined fill-1">star</span>
-                            <span class="material-symbols-outlined fill-1">star</span>
-                        </div>
-                        <p class="text-slate-600 dark:text-slate-400 italic mb-8 flex-grow">"The facilities at Adelaide
-                            University are world-class. Being part of the Group of Eight means I'm learning from the
-                            best in the field. PFEC Global made my transition to Australia incredibly smooth."</p>
-                        <div class="flex items-center gap-4">
-                            <img alt="Student portrait" class="w-14 h-14 rounded-full object-cover"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCka5JbTTnPQPYbt3C38PmBwIEPwLL6hNTfDaGxxraZszuCqMp_tJO6XqVW1ELMbPDiUcEl3IkY5ak7sbKA-xSZo1VOhyWZeJHoUJl8VfL35QjSKnv0qQPxSMtQt3Kn5Dt_o6rSNQMMKJ6TpsWJAGmOGBoOqz6Au0XnEAzncwjrmDm-Ek4M-X7549GOXldvtHwW365-Lf1J9wSkRAf6a-mnHLoN56r5cVozXwpfeqlkBQznuvSdxRbdJmz8C1EMkoUUxFdktXiaL6_8" />
-                            <div>
-                                <h4 class="font-bold text-slate-900 dark:text-white">Sarah Chen</h4>
-                                <p class="text-xs text-primary font-semibold uppercase tracking-wider">Master of
-                                    Business Analytics</p>
+                <div class="swiper testimonialSlider">
+                    <div class="swiper-wrapper">
+
+                        <!-- Testimonial 1 -->
+                        <div class="swiper-slide">
+                            <div class="group bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-200 dark:border-slate-800 flex flex-col
+      transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(40,99,216,0.20)] hover:border-[#2863D8]">
+
+                                <div class="flex items-center gap-1 text-yellow-400 mb-6">
+                                    <span class="material-symbols-outlined">star</span>
+                                    <span class="material-symbols-outlined">star</span>
+                                    <span class="material-symbols-outlined">star</span>
+                                    <span class="material-symbols-outlined">star</span>
+                                    <span class="material-symbols-outlined">star</span>
+                                </div>
+
+                                <p class="text-slate-600 dark:text-slate-400 italic mb-8 flex-grow">
+                                    "The facilities at Adelaide University are world-class. PFEC Global made my transition to Australia incredibly smooth."
+                                </p>
+
+                                <div class="flex items-center gap-4">
+                                    <img class="w-14 h-14 rounded-full object-cover border-2 border-[#2863D8]"
+                                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuCka5JbTTnPQPYbt3C38PmBwIEPwLL6hNTfDaGxxraZszuCqMp_tJO6XqVW1ELMbPDiUcEl3IkY5ak7sbKA-xSZo1VOhyWZeJHoUJl8VfL35QjSKnv0qQPxSMtQt3Kn5Dt_o6rSNQMMKJ6TpsWJAGmOGBoOqz6Au0XnEAzncwjrmDm-Ek4M-X7549GOXldvtHwW365-Lf1J9wSkRAf6a-mnHLoN56r5cVozXwpfeqlkBQznuvSdxRbdJmz8C1EMkoUUxFdktXiaL6_8"/>
+
+                                    <div>
+                                        <h4 class="font-bold text-slate-900 dark:text-white">Sarah Chen</h4>
+                                        <p class="text-xs text-[#2863D8] font-semibold uppercase tracking-wider">
+                                            Master of Business Analytics
+                                        </p>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
-                    </div>
-                    <!-- Testimonial 2 -->
-                    <div
-                        class="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 flex flex-col">
-                        <div class="flex items-center gap-1 text-primary mb-6">
-                            <span class="material-symbols-outlined fill-1">star</span>
-                            <span class="material-symbols-outlined fill-1">star</span>
-                            <span class="material-symbols-outlined fill-1">star</span>
-                            <span class="material-symbols-outlined fill-1">star</span>
-                            <span class="material-symbols-outlined fill-1">star</span>
-                        </div>
-                        <p class="text-slate-600 dark:text-slate-400 italic mb-8 flex-grow">"Studying IT here has opened
-                            so many doors. The industry connections and the focus on AI research are exactly what I
-                            needed for my career. Adelaide is also a very affordable city to live in!"</p>
-                        <div class="flex items-center gap-4">
-                            <img alt="Student portrait" class="w-14 h-14 rounded-full object-cover"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYCcQ7pbAxo4B6TMR37qy09x3XaLDd3LW2LItHWj8l5IY8XJNTWb3JLv9blaGG3dRwb4-I9nZkn_h6I4_qKllClRH2Nrg3TKQFUhyY5Qs8l6cXeSh5cMM3sm38jjqZkrV_v11WweBzs_uimxeviPhl0WKKVvjy-5gqqy0KDyxNbRPanJ9B3oED4EGSUjMR6FyJilYMeqfPJlXOHKEv11NVVZn4sa4gclubw8GdGnHaUW6Q6TPB3dj5MTuv1RHdSg0MAvmspvygpP-U" />
-                            <div>
-                                <h4 class="font-bold text-slate-900 dark:text-white">Rajesh Kumar</h4>
-                                <p class="text-xs text-primary font-semibold uppercase tracking-wider">Bachelors of
-                                    Information Tech</p>
+
+
+                        <!-- Testimonial 2 -->
+                        <div class="swiper-slide">
+                            <div class="group bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-200 dark:border-slate-800 flex flex-col
+      transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(40,99,216,0.20)] hover:border-[#2863D8]">
+
+                                <div class="flex items-center gap-1 text-yellow-400 mb-6">
+                                    <span class="material-symbols-outlined">star</span>
+                                    <span class="material-symbols-outlined">star</span>
+                                    <span class="material-symbols-outlined">star</span>
+                                    <span class="material-symbols-outlined">star</span>
+                                    <span class="material-symbols-outlined">star</span>
+                                </div>
+
+                                <p class="text-slate-600 dark:text-slate-400 italic mb-8 flex-grow">
+                                    "Studying IT here has opened so many doors. The industry connections and AI research are incredible."
+                                </p>
+
+                                <div class="flex items-center gap-4">
+                                    <img class="w-14 h-14 rounded-full object-cover border-2 border-[#2863D8]"
+                                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYCcQ7pbAxo4B6TMR37qy09x3XaLDd3LW2LItHWj8l5IY8XJNTWb3JLv9blaGG3dRwb4-I9nZkn_h6I4_qKllClRH2Nrg3TKQFUhyY5Qs8l6cXeSh5cMM3sm38jjqZkrV_v11WweBzs_uimxeviPhl0WKKVvjy-5gqqy0KDyxNbRPanJ9B3oED4EGSUjMR6FyJilYMeqfPJlXOHKEv11NVVZn4sa4gclubw8GdGnHaUW6Q6TPB3dj5MTuv1RHdSg0MAvmspvygpP-U"/>
+
+                                    <div>
+                                        <h4 class="font-bold text-slate-900 dark:text-white">Rajesh Kumar</h4>
+                                        <p class="text-xs text-[#2863D8] font-semibold uppercase tracking-wider">
+                                            Bachelor of IT
+                                        </p>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
-                    </div>
-                    <!-- Testimonial 3 -->
-                    <div
-                        class="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 flex flex-col">
-                        <div class="flex items-center gap-1 text-primary mb-6">
-                            <span class="material-symbols-outlined fill-1">star</span>
-                            <span class="material-symbols-outlined fill-1">star</span>
-                            <span class="material-symbols-outlined fill-1">star</span>
-                            <span class="material-symbols-outlined fill-1">star</span>
-                            <span class="material-symbols-outlined fill-1">star</span>
-                        </div>
-                        <p class="text-slate-600 dark:text-slate-400 italic mb-8 flex-grow">"The scholarship support I
-                            received was a game-changer. I feel supported both academically and personally. The campus
-                            culture is vibrant and I've made friends from all over the world."</p>
-                        <div class="flex items-center gap-4">
-                            <img alt="Student portrait" class="w-14 h-14 rounded-full object-cover"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZtIwSzQlOLF4zowTke3mXVTUN2QpF8dhh84OOewr9RWTB-oRLv4rQ5hYa0uaZttqmnf9lqFah5fg-wNvK950ch6vOAn2nDItPZWECS__93JiimHho4ts73rpM5RT_y0laS8kEpOunFOq1a_l7exxCaxNJjRaMeIWahem_HJ47_RH0GlcqQxxEdMoMsAoDwwcvdOoZODkQQLQU6zZFc405fIYeEI9Tz7nz0LyqsuppL-E3NUZY1yYMzQk_BnTZXZ3liayA15d2252Q" />
-                            <div>
-                                <h4 class="font-bold text-slate-900 dark:text-white">Elena Rodriguez</h4>
-                                <p class="text-xs text-primary font-semibold uppercase tracking-wider">Bachelor of Civil
-                                    Engineering</p>
+
+
+                        <!-- Testimonial 3 -->
+                        <div class="swiper-slide">
+                            <div class="group bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-200 dark:border-slate-800 flex flex-col
+      transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(40,99,216,0.20)] hover:border-[#2863D8]">
+
+                                <div class="flex items-center gap-1 text-yellow-400 mb-6">
+                                    <span class="material-symbols-outlined">star</span>
+                                    <span class="material-symbols-outlined">star</span>
+                                    <span class="material-symbols-outlined">star</span>
+                                    <span class="material-symbols-outlined">star</span>
+                                    <span class="material-symbols-outlined">star</span>
+                                </div>
+
+                                <p class="text-slate-600 dark:text-slate-400 italic mb-8 flex-grow">
+                                    "The scholarship support I received was a game-changer. The campus culture is vibrant."
+                                </p>
+
+                                <div class="flex items-center gap-4">
+                                    <img class="w-14 h-14 rounded-full object-cover border-2 border-[#2863D8]"
+                                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZtIwSzQlOLF4zowTke3mXVTUN2QpF8dhh84OOewr9RWTB-oRLv4rQ5hYa0uaZttqmnf9lqFah5fg-wNvK950ch6vOAn2nDItPZWECS__93JiimHho4ts73rpM5RT_y0laS8kEpOunFOq1a_l7exxCaxNJjRaMeIWahem_HJ47_RH0GlcqQxxEdMoMsAoDwwcvdOoZODkQQLQU6zZFc405fIYeEI9Tz7nz0LyqsuppL-E3NUZY1yYMzQk_BnTZXZ3liayA15d2252Q"/>
+
+                                    <div>
+                                        <h4 class="font-bold text-slate-900 dark:text-white">Elena Rodriguez</h4>
+                                        <p class="text-xs text-[#2863D8] font-semibold uppercase tracking-wider">
+                                            Civil Engineering
+                                        </p>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
+
+                        <div class="swiper-slide">
+                            <div class="group bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-200 dark:border-slate-800 flex flex-col
+      transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(40,99,216,0.20)] hover:border-[#2863D8]">
+
+                                <div class="flex items-center gap-1 text-yellow-400 mb-6">
+                                    <span class="material-symbols-outlined">star</span>
+                                    <span class="material-symbols-outlined">star</span>
+                                    <span class="material-symbols-outlined">star</span>
+                                    <span class="material-symbols-outlined">star</span>
+                                    <span class="material-symbols-outlined">star</span>
+                                </div>
+
+                                <p class="text-slate-600 dark:text-slate-400 italic mb-8 flex-grow">
+                                    "The scholarship support I received was a game-changer. The campus culture is vibrant."
+                                </p>
+
+                                <div class="flex items-center gap-4">
+                                    <img class="w-14 h-14 rounded-full object-cover border-2 border-[#2863D8]"
+                                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZtIwSzQlOLF4zowTke3mXVTUN2QpF8dhh84OOewr9RWTB-oRLv4rQ5hYa0uaZttqmnf9lqFah5fg-wNvK950ch6vOAn2nDItPZWECS__93JiimHho4ts73rpM5RT_y0laS8kEpOunFOq1a_l7exxCaxNJjRaMeIWahem_HJ47_RH0GlcqQxxEdMoMsAoDwwcvdOoZODkQQLQU6zZFc405fIYeEI9Tz7nz0LyqsuppL-E3NUZY1yYMzQk_BnTZXZ3liayA15d2252Q"/>
+
+                                    <div>
+                                        <h4 class="font-bold text-slate-900 dark:text-white">Elena Rodriguez</h4>
+                                        <p class="text-xs text-[#2863D8] font-semibold uppercase tracking-wider">
+                                            Civil Engineering
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="group bg-white dark:bg-slate-900 p-8 rounded-2xl border border-slate-200 dark:border-slate-800 flex flex-col
+      transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(40,99,216,0.20)] hover:border-[#2863D8]">
+
+                                <div class="flex items-center gap-1 text-yellow-400 mb-6">
+                                    <span class="material-symbols-outlined">star</span>
+                                    <span class="material-symbols-outlined">star</span>
+                                    <span class="material-symbols-outlined">star</span>
+                                    <span class="material-symbols-outlined">star</span>
+                                    <span class="material-symbols-outlined">star</span>
+                                </div>
+
+                                <p class="text-slate-600 dark:text-slate-400 italic mb-8 flex-grow">
+                                    "The scholarship support I received was a game-changer. The campus culture is vibrant."
+                                </p>
+
+                                <div class="flex items-center gap-4">
+                                    <img class="w-14 h-14 rounded-full object-cover border-2 border-[#2863D8]"
+                                         src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZtIwSzQlOLF4zowTke3mXVTUN2QpF8dhh84OOewr9RWTB-oRLv4rQ5hYa0uaZttqmnf9lqFah5fg-wNvK950ch6vOAn2nDItPZWECS__93JiimHho4ts73rpM5RT_y0laS8kEpOunFOq1a_l7exxCaxNJjRaMeIWahem_HJ47_RH0GlcqQxxEdMoMsAoDwwcvdOoZODkQQLQU6zZFc405fIYeEI9Tz7nz0LyqsuppL-E3NUZY1yYMzQk_BnTZXZ3liayA15d2252Q"/>
+
+                                    <div>
+                                        <h4 class="font-bold text-slate-900 dark:text-white">Elena Rodriguez</h4>
+                                        <p class="text-xs text-[#2863D8] font-semibold uppercase tracking-wider">
+                                            Civil Engineering
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </section>
-        <section
-            class="py-24 bg-gradient-to-br from-[#0a1e4d] via-[#1152d4] to-[#0a1e4d] text-white relative overflow-hidden"
-            id="scholarships">
-            <div class="absolute top-0 right-0 -mt-20 -mr-20 opacity-10">
-                <span class="material-symbols-outlined text-[400px]">workspace_premium</span>
-            </div>
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 reveal">
-                <div class="grid lg:grid-cols-5 gap-16 items-center">
-                    <div class="lg:col-span-3 space-y-10">
-                        <div class="space-y-4">
-                            <span
-                                class="bg-white/20 border border-white/30 px-4 py-1.5 rounded-full text-sm font-bold tracking-widest uppercase">Financial
-                                Support</span>
-                            <h2 class="text-5xl font-black leading-tight">Investing in Your <br /><span
-                                    class="text-blue-200 italic">Global Future</span></h2>
-                            <p class="text-blue-100 text-xl leading-relaxed max-w-2xl">
-                                Adelaide University, in partnership with PFEC Global, offers one of Australia's most
-                                generous scholarship programs to empower high-achieving international students.
-                            </p>
-                        </div>
-                        <div class="grid gap-6">
-                            <div
-                                class="group flex items-start gap-6 bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20 hover:bg-white/20 transition-all">
-                                <div
-                                    class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-primary shrink-0">
-                                    <span class="material-symbols-outlined text-4xl">public</span>
-                                </div>
-                                <div>
-                                    <h4 class="font-black text-2xl mb-2">Global Citizens Scholarship</h4>
-                                    <p class="text-blue-100 leading-relaxed">Get a 15% to 30% reduction on your total
-                                        annual tuition fees for the entire duration of your undergraduate or
-                                        postgraduate program.</p>
-                                </div>
-                            </div>
-                            <div
-                                class="group flex items-start gap-6 bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20 hover:bg-white/20 transition-all">
-                                <div
-                                    class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-primary shrink-0">
-                                    <span class="material-symbols-outlined text-4xl">biotech</span>
-                                </div>
-                                <div>
-                                    <h4 class="font-black text-2xl mb-2">Higher Degree Research Scholarships</h4>
-                                    <p class="text-blue-100 leading-relaxed">Comprehensive financial support packages
-                                        including tuition fee waivers and living stipends for PhD and Masters by
-                                        Research candidates.</p>
-                                </div>
-                            </div>
-                            <div
-                                class="group flex items-start gap-6 bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20 hover:bg-white/20 transition-all">
-                                <div
-                                    class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-primary shrink-0">
-                                    <span class="material-symbols-outlined text-4xl">card_membership</span>
-                                </div>
-                                <div>
-                                    <h4 class="font-black text-2xl mb-2">PFEC Global Exclusive Bursaries</h4>
-                                    <p class="text-blue-100 leading-relaxed">Exclusive one-off grants and application
-                                        fee waivers available only for students applying through PFEC Global's official
-                                        channels.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="pt-4">
-                            <button
-                                class="bg-white text-primary px-12 py-5 rounded-2xl font-black text-xl hover:scale-105 transition-all shadow-2xl shadow-black/20">
-                                Check Your Eligibility Now
-                            </button>
-                        </div>
-                    </div>
-                    <div class="lg:col-span-2">
-                        <div class="bg-white text-slate-900 p-10 rounded-[2.5rem] shadow-2xl relative overflow-hidden">
-                            <div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -mr-16 -mt-16"></div>
-                            <div class="relative z-10">
-                                <div
-                                    class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-8">
-                                    <span class="material-symbols-outlined text-4xl">calendar_month</span>
-                                </div>
-                                <h3 class="text-3xl font-black mb-4" style="color: #150C5D;">Scholarship <br />Masterclass</h3>
-                                <p class="text-slate-600 mb-8">Join our upcoming webinar to learn the secrets to a
-                                    successful scholarship application for the 2025 intake.</p>
-                                <div class="space-y-6 mb-10">
-                                    <div class="flex items-center gap-4">
-                                        <span class="material-symbols-outlined text-primary">event</span>
-                                        <div>
-                                            <p class="text-[10px] uppercase font-black text-slate-400">Date</p>
-                                            <p class="font-bold">24th October, 2024</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-center gap-4">
-                                        <span class="material-symbols-outlined text-primary">schedule</span>
-                                        <div>
-                                            <p class="text-[10px] uppercase font-black text-slate-400">Time</p>
-                                            <p class="font-bold">2:00 PM (Local Time)</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <button
-                                    class="w-full bg-primary text-white py-5 rounded-2xl font-black text-lg hover:bg-primary/90 transition-all shadow-lg shadow-primary/30">
-                                    Register for Free
-                                </button>
-                                <p class="text-center text-xs text-slate-400 mt-6 font-medium">Limited slots available
-                                    for international applicants.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
         <!-- Final CTA Section -->
-        <section class="py-24 bg-slate-50 dark:bg-slate-800/50" id="faq">
+        <section class="py-8 bg-slate-50 dark:bg-slate-800/50" id="faq">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
-                <div class="text-center mb-16">
+                <div class="text-center mb-8">
                     <h2 class="text-4xl font-black text-slate-900 dark:text-white mb-4" style="color: #150C5D;">Frequently Asked Questions</h2>
                     <p class="text-slate-600 dark:text-slate-400 text-lg">Quick answers to the most common questions
                         from international students.</p>
                 </div>
                 <div class="space-y-6">
-                    <details
-                        class="group bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden">
+                    <details class="group bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden" open>
                         <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
                             <h3 class="text-lg font-bold text-slate-900 dark:text-white">What are the specific entry
                                 requirements for Adelaide University?</h3>
@@ -1256,27 +1458,9 @@
                 </div>
             </div>
         </section>
-        <section class="py-24 bg-white dark:bg-slate-900">
-            <div class="max-w-4xl mx-auto px-4 text-center reveal">
-                <h2 class="text-4xl font-black text-slate-900 dark:text-white mb-6" style="color: #150C5D;">Ready to Start Your Australian
-                    Journey?</h2>
-                <p class="text-slate-600 dark:text-slate-400 text-lg mb-10">Get expert guidance on courses, visas, and
-                    living in Adelaide. Our consultants are ready to help you every step of the way.</p>
-                <div class="flex flex-col sm:flex-row justify-center gap-4">
-                    <button
-                        class="bg-primary hover:bg-primary/90 text-white px-10 py-5 rounded-xl text-xl font-bold transition-all shadow-2xl shadow-primary/40">
-                        Book a Free Consultation
-                    </button>
-                    <button
-                        class="bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white px-10 py-5 rounded-xl text-xl font-bold hover:bg-slate-200 transition-all">
-                        Talk to an Expert
-                    </button>
-                </div>
-            </div>
-        </section>
+
         <!-- Footer -->
-        <section class="py-24 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800"
-            id="pfec-experience">
+        <section class="py-8 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800" id="pfec-experience">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
                 <div class="text-center max-w-3xl mx-auto mb-16">
                     <h2 class="text-4xl font-black text-slate-900 dark:text-white mb-4" style="color: #150C5D;">Why Choose PFEC Global?</h2>
@@ -1285,36 +1469,105 @@
                         to world-class education at Adelaide University.
                     </p>
                 </div>
-                <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div
-                        class="flex flex-col items-center p-8 rounded-2xl bg-background-light dark:bg-background-dark/50 border border-slate-100 dark:border-slate-800 transition-all hover:shadow-lg">
-                        <span class="material-symbols-outlined text-5xl text-primary mb-4">groups</span>
-                        <span class="text-3xl font-black text-slate-900 dark:text-white">22,000+</span>
-                        <span class="text-sm font-bold text-slate-500 uppercase tracking-widest mt-2">Students
-                            Assisted</span>
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+
+                    <!-- Card 1 -->
+                    <div class="group p-8 text-center rounded-2xl bg-white dark:bg-slate-900
+border border-[#2863D8]/15 hover:border-[#2863D8]
+shadow-md hover:shadow-[0_20px_40px_rgba(40,99,216,0.20)]
+transition-all duration-300 hover:-translate-y-2">
+
+                        <div class="flex items-center justify-center w-16 h-16 mx-auto mb-5 rounded-xl
+bg-gradient-to-br from-blue-500 to-blue-700 text-white shadow-lg">
+
+                            <span class="material-symbols-outlined text-3xl">groups</span>
+
+                        </div>
+
+                        <div class="text-3xl font-black text-slate-900 dark:text-white">
+                            22,000+
+                        </div>
+
+                        <div class="text-sm font-semibold text-slate-500 uppercase tracking-wider mt-2">
+                            Students Assisted
+                        </div>
+
                     </div>
-                    <div
-                        class="flex flex-col items-center p-8 rounded-2xl bg-background-light dark:bg-background-dark/50 border border-slate-100 dark:border-slate-800 transition-all hover:shadow-lg">
-                        <span class="material-symbols-outlined text-5xl text-primary mb-4">account_balance</span>
-                        <span class="text-3xl font-black text-slate-900 dark:text-white">550+</span>
-                        <span class="text-sm font-bold text-slate-500 uppercase tracking-widest mt-2">Partner
-                            Institutions</span>
+
+
+                    <!-- Card 2 -->
+                    <div class="group p-8 text-center rounded-2xl bg-white dark:bg-slate-900
+border border-[#2863D8]/15 hover:border-[#2863D8]
+shadow-md hover:shadow-[0_20px_40px_rgba(40,99,216,0.20)]
+transition-all duration-300 hover:-translate-y-2">
+
+                        <div class="flex items-center justify-center w-16 h-16 mx-auto mb-5 rounded-xl
+bg-gradient-to-br from-emerald-500 to-green-700 text-white shadow-lg">
+
+                            <span class="material-symbols-outlined text-3xl">account_balance</span>
+
+                        </div>
+
+                        <div class="text-3xl font-black text-slate-900 dark:text-white">
+                            550+
+                        </div>
+
+                        <div class="text-sm font-semibold text-slate-500 uppercase tracking-wider mt-2">
+                            Partner Institutions
+                        </div>
+
                     </div>
-                    <div
-                        class="flex flex-col items-center p-8 rounded-2xl bg-background-light dark:bg-background-dark/50 border border-slate-100 dark:border-slate-800 transition-all hover:shadow-lg">
-                        <span class="material-symbols-outlined text-5xl text-primary mb-4">history_edu</span>
-                        <span class="text-3xl font-black text-slate-900 dark:text-white">18+ Years</span>
-                        <span class="text-sm font-bold text-slate-500 uppercase tracking-widest mt-2">Of
-                            Experience</span>
+
+
+                    <!-- Card 3 -->
+                    <div class="group p-8 text-center rounded-2xl bg-white dark:bg-slate-900
+border border-[#2863D8]/15 hover:border-[#2863D8]
+shadow-md hover:shadow-[0_20px_40px_rgba(40,99,216,0.20)]
+transition-all duration-300 hover:-translate-y-2">
+
+                        <div class="flex items-center justify-center w-16 h-16 mx-auto mb-5 rounded-xl
+bg-gradient-to-br from-purple-500 to-indigo-700 text-white shadow-lg">
+
+                            <span class="material-symbols-outlined text-3xl">history_edu</span>
+
+                        </div>
+
+                        <div class="text-3xl font-black text-slate-900 dark:text-white">
+                            18+
+                        </div>
+
+                        <div class="text-sm font-semibold text-slate-500 uppercase tracking-wider mt-2">
+                            Years of Experience
+                        </div>
+
                     </div>
-                    <div
-                        class="flex flex-col items-center p-8 rounded-2xl bg-background-light dark:bg-background-dark/50 border border-slate-100 dark:border-slate-800 transition-all hover:shadow-lg">
-                        <span class="material-symbols-outlined text-5xl text-primary mb-4">language</span>
-                        <span class="text-3xl font-black text-slate-900 dark:text-white">12</span>
-                        <span class="text-sm font-bold text-slate-500 uppercase tracking-widest mt-2">Offices
-                            Worldwide</span>
+
+
+                    <!-- Card 4 -->
+                    <div class="group p-8 text-center rounded-2xl bg-white dark:bg-slate-900
+border border-[#2863D8]/15 hover:border-[#2863D8]
+shadow-md hover:shadow-[0_20px_40px_rgba(40,99,216,0.20)]
+transition-all duration-300 hover:-translate-y-2">
+
+                        <div class="flex items-center justify-center w-16 h-16 mx-auto mb-5 rounded-xl
+bg-gradient-to-br from-orange-400 to-red-500 text-white shadow-lg">
+
+                            <span class="material-symbols-outlined text-3xl">language</span>
+
+                        </div>
+
+                        <div class="text-3xl font-black text-slate-900 dark:text-white">
+                            12
+                        </div>
+
+                        <div class="text-sm font-semibold text-slate-500 uppercase tracking-wider mt-2">
+                            Offices Worldwide
+                        </div>
+
                     </div>
+
                 </div>
+
             </div>
         </section>
         <footer class="bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-900 py-16">
@@ -1326,7 +1579,7 @@
                             <img alt="Adelaide University Logo" class="h-12 w-auto object-contain"
                                 src="./adelaide-university-logo-b (1).jpg" />
                         </div>
-                            <h2 class="text-xl font-black" style="color: #150C5D;">Adelaide University | PFEC Global</h2>
+                            <h2 class="text-xl font-black" style="color: #150C5D;">Adelaide University</h2>
                         </div>
                         <p class="text-slate-600 dark:text-slate-400 max-w-sm mb-6">
                             PFEC Global is an authorized recruitment partner for Adelaide University, specializing in
@@ -1475,6 +1728,66 @@
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        new Swiper(".testimonialSlider", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true,
+
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+
+            breakpoints: {
+                320: { slidesPerView: 1 },
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 }
+            }
+        });
+    </script>
+
+    <script>
+        function toggleCourse(button) {
+            const accordion = button.closest('.course-accordion');
+            const details = accordion.querySelector('.course-details');
+
+            const container = accordion.parentElement;
+
+            container.querySelectorAll('.course-details').forEach(el => {
+                if (el !== details) {
+                    el.classList.add('hidden');
+                    el.parentElement.classList.remove('active');
+                }
+            });
+
+            details.classList.toggle('hidden');
+            accordion.classList.toggle('active');
+        }
+    </script>
+    <script>
+
+        const targetDate = new Date("October 24, 2026 14:00:00").getTime();
+
+        setInterval(() => {
+
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+
+        }, 1000);
+
+    </script>
     <script>
         function openCourseModal(e) {
             if (e) e.preventDefault();
