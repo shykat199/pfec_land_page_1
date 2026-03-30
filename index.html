@@ -100,6 +100,14 @@
                     </nav>
                 </div>
             </div>
+
+            <div class="absolute bottom-0 left-0 w-full h-[3px] bg-slate-200 dark:bg-slate-800">
+                <div id="scroll-progress" class="h-full w-0 bg-primary
+                     shadow-[0_0_8px_rgba(0,0,0,0.15)]
+                     transition-[width] duration-150 ease-out">
+                </div>
+            </div>
+
         </header>
         <!-- Hero Section -->
         <section class="relative min-h-[85vh] flex items-center pt-10 pb-20">
@@ -1996,6 +2004,17 @@ expand_more
                 campusPanel.classList.add('hidden');
             }
         }
+    </script>
+
+    <script>
+        const progressBar = document.getElementById('scroll-progress');
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+            progressBar.style.width = scrollPercent + '%';
+        });
     </script>
 </body>
 
